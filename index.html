@@ -5,54 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Proof of Crowd · evidence-based attention audits</title>
 <meta name="description" content="Is that token's community real? Evidence-based attention audits: spam analysis, creator concentration, decay signatures. Open methodology.">
-<style>
-  :root {
-    --bg: #0d1117; --panel: #161b22; --track: #21262d;
-    --text: #e6edf3; --sub: #8b949e; --green: #3fb950; --red: #f85149; --yellow: #d29922;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; }
-  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
-  header { padding: 96px 0 64px; }
-  .kicker { color: var(--sub); font-size: 15px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 18px; }
-  h1 { font-size: clamp(34px, 6vw, 56px); line-height: 1.12; font-weight: 800; }
-  h1 .green { color: var(--green); }
-  .lede { color: var(--sub); font-size: 20px; margin-top: 22px; max-width: 620px; }
-  .cta { display: inline-block; margin-top: 34px; background: var(--green); color: #04140a; font-weight: 700; font-size: 17px; padding: 14px 26px; border-radius: 10px; text-decoration: none; }
-  .cta.secondary { background: transparent; color: var(--text); border: 1px solid var(--track); margin-left: 12px; }
-  section { padding: 56px 0; border-top: 1px solid var(--track); }
-  h2 { font-size: 26px; font-weight: 700; margin-bottom: 24px; }
-  p { margin-bottom: 14px; }
-  .sub { color: var(--sub); }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; margin-top: 8px; }
-  .card { background: var(--panel); border: 1px solid var(--track); border-radius: 12px; padding: 22px; }
-  .card h3 { font-size: 18px; margin-bottom: 8px; }
-  .card p { color: var(--sub); font-size: 15px; margin-bottom: 0; }
-  .tier { display: flex; flex-direction: column; }
-  .tier .price { font-size: 30px; font-weight: 800; color: var(--green); margin: 6px 0 2px; }
-  .tier .per { color: var(--sub); font-size: 14px; margin-bottom: 12px; }
-  .tier ul { list-style: none; margin: 0 0 6px; }
-  .tier li { color: var(--sub); font-size: 15px; padding-left: 20px; position: relative; margin-bottom: 7px; }
-  .tier li::before { content: "•"; color: var(--green); position: absolute; left: 4px; }
-  .findings li { margin-bottom: 10px; }
-  ul.findings { list-style: none; }
-  ul.findings li { padding-left: 24px; position: relative; }
-  ul.findings li::before { content: "→"; color: var(--green); position: absolute; left: 0; }
-  a { color: var(--green); }
-  .integrity { background: var(--panel); border-left: 3px solid var(--yellow); border-radius: 0 10px 10px 0; padding: 20px 22px; margin-top: 10px; }
-  footer { padding: 44px 0 70px; border-top: 1px solid var(--track); color: var(--sub); font-size: 13.5px; }
-  footer p { margin-bottom: 8px; }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="wrap">
 
-<header>
-  <div class="kicker">Proof of Crowd · by degen3rette</div>
+<nav>
+  <a class="brand" href="./">Proof of <span>Crowd</span></a>
+  <a class="link" href="sample.html">Sample report</a>
+  <a class="link" href="https://github.com/nickisanders/lunarcrush-projects">Methodology</a>
+  <span class="spacer"></span>
+  <a class="navcta" href="#pricing">Request an audit</a>
+</nav>
+
+<header class="hero">
+  <div class="kicker">Attention audits · by degen3rette</div>
   <h1>Is that token's community <span class="green">real?</span></h1>
   <p class="lede">Evidence-based attention audits for tokens: who is actually talking, how much of it is manufactured, and whether the crowd survives contact with a spreadsheet. Answer in 72 hours, methodology fully public.</p>
   <a class="cta" href="#pricing">Request an audit</a>
-  <a class="cta secondary" href="https://github.com/nickisanders/lunarcrush-projects">Read the methodology</a>
+  <a class="cta secondary" href="sample.html">See a sample report</a>
 </header>
 
 <section>
@@ -79,6 +50,15 @@
     <div class="card"><h3>History</h3><p>Every attention spike in the token's history, classified. Decay and residue signatures: does attention compound or round-trip?</p></div>
     <div class="card"><h3>Campaign forensics</h3><p>Fresh-wave timing, account concentration behind spikes, and cross-checks against known manufactured patterns.</p></div>
     <div class="card"><h3>The verdict</h3><p>A written, evidence-first assessment: what the data supports, what it rules out, and what it can't determine. No adjectives without numbers.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>How it works</h2>
+  <div class="steps">
+    <div class="step"><span class="num"></span><div><h3>Scope</h3><p>You name the token and the question: pre-listing diligence, pre-investment check, or proof for your own community. Fixed price, fixed turnaround, no surprises.</p></div></div>
+    <div class="step"><span class="num"></span><div><h3>Analysis</h3><p>The full pipeline runs: baselines, spike history, composition, creator forensics. The same open-source methodology as the public work, at professional depth.</p></div></div>
+    <div class="step"><span class="num"></span><div><h3>Report</h3><p>A written report with every claim tied to evidence, plus a walkthrough call on Full Audits. You get the data files too: check my work.</p></div></div>
   </div>
 </section>
 
@@ -124,8 +104,18 @@
 </section>
 
 <section>
+  <h2>Questions you'd reasonably ask</h2>
+  <details><summary>Can you tell me who is behind manufactured hype?</summary><p>No, and I won't pretend to. The data measures amplification patterns: spam waves, account concentration, timing. Bot campaigns, coordinated advocacy, and algorithmic amplification can produce overlapping signatures. Reports state what the evidence supports and what it can't determine.</p></details>
+  <details><summary>What if the audit comes back bad for our token?</summary><p>Then that's what the report says, and you'll see exactly why: every claim ties to data. Many "bad" results are actually the chronic-baseline case: a noisy neighborhood, not fresh manufacturing, and the report distinguishes those. What I won't do is soften a verdict because the subject is paying.</p></details>
+  <details><summary>Where does the data come from?</summary><p>Social and market data comes from LunarCrush's API, including their post-level spam classification, which my published backtests found carries real signal. I'm a LunarCrush affiliate and disclose that on everything. The analysis, calibration, and conclusions are my own and fully open source.</p></details>
+  <details><summary>Why should I trust the methodology?</summary><p>Because you can read it, run it, and watch me audit it. Every scoring decision, calibration pass, and self-correction is public in the repo, including the times my own headline claims didn't survive their audits.</p></details>
+  <details><summary>Is this financial advice?</summary><p>No. Audits describe conversation authenticity, not investment merit. A token can have a real community and a bad product, or manufactured hype and excellent technology.</p></details>
+  <details><summary>Can you monitor our token for attacks on our reputation?</summary><p>Yes, that's the Monitoring tier: if someone wash-hypes your token to make your community look botted, or a fresh spam wave rides your genuine announcement, you'll know with evidence in hand.</p></details>
+</section>
+
+<section>
   <h2>Who's behind this</h2>
-  <p>Nicki Sanders (degen3rette): engineering leader and blockchain investigator. I publish daily hype-detection verdicts, and the methodology behind this service in the open, including the audits of my own headline results. The track record is the pitch: <a href="https://github.com/nickisanders/lunarcrush-projects">read it</a>.</p>
+  <p>Nicki Sanders (degen3rette): engineering leader and blockchain investigator. I publish daily hype-detection verdicts and the methodology behind this service in the open, including the audits of my own headline results. The track record is the pitch: <a href="https://github.com/nickisanders/lunarcrush-projects">read it</a>.</p>
 </section>
 
 <footer>
