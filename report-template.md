@@ -4,7 +4,7 @@
 **Prepared for:** Client (or "Public sample")
 **Date:** YYYY-MM-DD · **Data window:** YYYY-MM-DD to YYYY-MM-DD
 **Engagement:** Pulse Check / Full Audit
-**Analyst:** Nicki Sanders (degen3rette) · methodology: github.com/nickisanders/lunarcrush-projects
+**Analyst:** Nicki Sanders · methodology: github.com/nickisanders/lunarcrush-projects
 
 ---
 
