@@ -8,7 +8,7 @@ An audit answers one question with evidence: who is actually talking about a tok
 
 ## How it works
 
-The methodology is fully open source and developed in public: the detector, the backtests, the calibration passes, and the audits of my own headline results all live in [lunarcrush-projects](https://github.com/nickisanders/lunarcrush-projects). This repo holds the service: the site and the [report template](report-template.md) every engagement follows.
+The methodology is developed and stress-tested in public through daily published verdicts and research findings. This repo holds the service: the site and the [report template](report-template.md) every engagement follows.
 
 ## Integrity policy
 
