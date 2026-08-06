@@ -18,7 +18,10 @@
 |---|---|---|
 | Current attention vs 30d baseline | | elevated / normal / depressed |
 | Spam share, current vs own norm | x.x vs x.x (x.xx lift) | fresh wave / chronic / clean |
-| Creator concentration (top 3 share) | | broad / concentrated / megaphone |
+| Creator concentration (top 3 share) | | broad / concentrated / dominated |
+| Largest single account share | | who, and what share of everything |
+| Source classification | | crowd / botnet / megaphone / institutional broadcast |
+| Organic share (institutional volume removed) | | the conversation underneath the promos |
 | Manufactured score (current) | /100 | organic / mixed / manufactured |
 | Attention floor trend (residue) | | compounding / flat / cratered |
 
@@ -35,7 +38,16 @@
 
 ## 4. Creator forensics
 
-*Who carries this token's conversation: top accounts by interactions, follower quality, persistence across spikes, appearance in other flagged tokens' spikes (recidivism check). Megaphone assessment: is the "community" one large account?*
+*Who carries this token's conversation: top accounts by interactions, follower quality, persistence across spikes, appearance in other flagged tokens' spikes (recidivism check).*
+
+**Source classification.** Concentration alone doesn't say what kind of concentration it is, so each spike is classified:
+
+- **Broad crowd** — many independent accounts, no single dominant voice.
+- **Coordinated botnet** — concentrated, spam-heavy, with a fresh spam wave above the token's own baseline.
+- **Single megaphone** — one account is effectively the conversation: a project announcement or a large KOL, not automation.
+- **Institutional broadcast** — an exchange marketing account or automated alert feed is the spike. Enormous interaction counts, nobody forming an opinion. Reported separately because it is neither manipulation nor community.
+
+Where institutional or megaphone volume dominates, the report recomputes the token's conversation with that volume removed, so the organic layer underneath is visible on its own terms.
 
 ## 5. Benchmarks
 
