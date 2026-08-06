@@ -37,6 +37,7 @@
     <tr><td>Sentiment</td><td>100 (unanimous positive)</td><td><span class="red">uniformity tell</span></td></tr>
     <tr><td>Price response (spike day, close-to-close)</td><td>$0.051 to $0.051</td><td>none</td></tr>
     <tr><td>Attention floor after event vs before</td><td>~60-80k/day vs ~350k/day</td><td><span class="red">crater, not residue</span></td></tr>
+    <tr><td>New wallets created (Ethereum + BNB Chain)</td><td>73, from 2.1M interactions</td><td><span class="red">35 per million</span></td></tr>
   </table>
 </section>
 
@@ -47,13 +48,19 @@
 </section>
 
 <section>
-  <h2>3 · What this audit cannot determine</h2>
-  <p class="note">Post-level data measures amplification, not its source. A paid bot campaign, third-party engagement farming, coordinated advocacy, and algorithmic amplification can produce overlapping signatures; this report claims none of them specifically. It also says nothing about the project's technology or team, which may be excellent: conversation authenticity and product quality are independent axes. A real catalyst and rented amplification can co-occur, and the evidence here is consistent with that combination. Payment does not influence conclusions; this specimen was unpaid and published because the event was publicly notable.</p>
+  <h2>3 · Did anyone actually show up?</h2>
+  <p>Social data can only tell you what was said. The stronger test is whether the conversation produced anything on-chain: real discovery converts some share of attention into wallets that never held the token before. So the same window was measured against first-time token receipts on both of the token's EVM deployments.</p>
+  <p>The July 31 event produced <strong>73 new wallets</strong> across Ethereum and BNB Chain, from 2.1 million interactions. That is 35 wallets per million. For comparison, a smaller spike eight days earlier — 1.5 million interactions, less attention — brought in 449 wallets, roughly 302 per million. On ordinary days this token converts attention at about 979 per million.</p>
+  <img class="chart" src="assets/zama-conversion.png" alt="New first-time holders per million interactions: ordinary day 979, July 23 spike 302, July 31 spike 35">
+  <p>The flagged event drew the most attention of any day in the window and produced the fewest wallets per unit of it, by an order of magnitude. Two independent measurements — who was posting, and who actually bought — point the same direction, which is the strongest form of evidence this method produces.</p>
+
+  <h2>4 · What this audit cannot determine</h2>
+  <p class="note"><strong>On the on-chain figures:</strong> holder counts are a proxy, not a headcount. One person can hold several wallets, airdrops mint holders who never engaged, and anyone buying through an exchange never appears on-chain at all. This token also has a Solana deployment that the EVM-based method does not cover, so the wallet counts above are a floor, not a total; the comparison holds because every figure is measured the same way on the same chains.<br><br>Post-level data measures amplification, not its source. A paid bot campaign, third-party engagement farming, coordinated advocacy, and algorithmic amplification can produce overlapping signatures; this report claims none of them specifically. It also says nothing about the project's technology or team, which may be excellent: conversation authenticity and product quality are independent axes. A real catalyst and rented amplification can co-occur, and the evidence here is consistent with that combination. Payment does not influence conclusions; this specimen was unpaid and published because the event was publicly notable.</p>
 </section>
 
 <section>
-  <h2>4 · Provenance</h2>
-  <p>Every number above comes from the same pipeline behind the daily public verdicts: the detector flagged this event live on July 31, the follow-up chart was generated automatically three days later, and the residue benchmark comes from published research across 5,000+ historical spikes. Paid reports include a reproduction appendix so you can verify every figure.</p>
+  <h2>5 · Provenance</h2>
+  <p>Every number above comes from the same pipeline behind the daily public verdicts: the detector flagged this event live on July 31, the follow-up chart was generated automatically three days later, and the residue benchmark comes from published research across 5,000+ historical spikes. On-chain figures are first-time token receipts queried directly against indexed chain data, with contract addresses resolved per deployment rather than assumed. Paid reports include a reproduction appendix so you can verify every figure.</p>
   <p style="margin-top: 24px;"><a class="cta" href="./#contact">Get this for your token</a></p>
 </section>
 
