@@ -109,10 +109,43 @@
 <section id="contact">
   <h2>Request an audit</h2>
   <p>Tell me the token and the question you need answered. Fixed price, fixed turnaround, and a reply within one business day.</p>
-  <p style="margin-top:22px;">
-    <a class="cta" href="GOOGLE_FORM_URL_PLACEHOLDER" target="_blank" rel="noopener">Start an audit request</a>
-  </p>
-  <p class="sub" style="font-size:14px; margin-top:18px;">Takes about a minute. Prefer X? <a href="https://x.com/degen3rette">DM @degen3rette</a>.</p>
+
+  <form class="form" action="FORM_ENDPOINT" method="POST">
+    <div class="row">
+      <div>
+        <label for="name">Your name</label>
+        <input id="name" type="text" name="name" required placeholder="Jane Okafor">
+      </div>
+      <div>
+        <label for="email">Email for the reply</label>
+        <input id="email" type="email" name="email" required placeholder="jane@fund.xyz">
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="token">Token</label>
+        <input id="token" type="text" name="token" required placeholder="$TICKER, and the contract if there is one">
+      </div>
+      <div>
+        <label for="tier">What you're after</label>
+        <select id="tier" name="tier">
+          <option>Pulse Check &mdash; $500, 48 hours</option>
+          <option>Full Audit &mdash; $2,500, one week</option>
+          <option>Monitoring &mdash; $750/mo</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <label for="question">The question you need answered</label>
+      <textarea id="question" name="question" required placeholder="We're considering a listing and the social numbers look too good. Is the community real?"></textarea>
+    </div>
+    <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <input type="hidden" name="_subject" value="Proof of Crowd — audit request">
+    <button type="submit">Send the request</button>
+    <p class="note">No obligation, and I'll tell you if an audit is the wrong tool for your question.
+      Prefer X? <a href="https://x.com/degen3rette">DM @degen3rette</a>.</p>
+  </form>
 </section>
 
 <section>
