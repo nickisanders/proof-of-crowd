@@ -8,17 +8,12 @@ An audit answers one question with evidence: who is actually talking about a tok
 
 ## Setting up the intake form
 
-`index.html` posts to a `FORM_ENDPOINT` placeholder. Any endpoint that accepts
-a plain POST works and none of them need JavaScript or a backend:
+`index.html` posts to Formspree. Submissions arrive at the address registered
+with that form, so no email address appears in this public repo.
 
-- **Formspree** — create a form, copy the `https://formspree.io/f/XXXXXXX` URL.
-- **Tally** — create a form, use its POST endpoint.
-
-Replace the one occurrence and push:
-
-```bash
-sed -i '' 's|FORM_ENDPOINT|https://formspree.io/f/XXXXXXX|' index.html
-```
+To point it somewhere else, replace the one `action` URL in `index.html` with
+any endpoint that accepts a plain POST; none of them need JavaScript or a
+backend.
 
 The form carries a hidden `_gotcha` honeypot field, which Formspree reads as a
 spam trap, and a `_subject` line so requests arrive labelled.
