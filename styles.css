@@ -1,68 +1,75 @@
 :root {
-  --bg: #0d1117; --panel: #161b22; --track: #21262d;
-  --text: #e6edf3; --sub: #8b949e; --green: #3fb950; --red: #f85149; --yellow: #d29922;
+  /* Dossier. Paper and ink, so an audit reads as a document rather than a
+     dashboard screenshot. The brand is deliberately not green: when the brand
+     colour and the "organic" verdict colour are the same, the logo casts a
+     vote just by being on the page. Cool ink carries the brand, warm hues and
+     green carry judgement, and nothing crosses over. */
+  --bg: #f6f3ec; --panel: #ffffff; --line: #ded8cd;
+  --text: #15171c; --sub: #6e6a60;
+  --brand: #1b3a6b; --on-brand: #ffffff;
+  --ok: #236440; --mid: #7d560c; --bad: #a33228;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; }
 .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
-nav { display: flex; align-items: center; gap: 26px; padding: 22px 0; border-bottom: 1px solid var(--track); }
+nav { display: flex; align-items: center; gap: 26px; padding: 22px 0; border-bottom: 1px solid var(--line); }
 nav .brand { display: inline-flex; align-items: center; gap: 9px; font-weight: 800; font-size: 17px; color: var(--text); text-decoration: none; letter-spacing: 0.3px; }
 nav .brand .brandmark { flex: none; }
 nav .brand .brandtext { white-space: nowrap; }
-nav .brand .brandtext span { color: var(--green); }
+nav .brand .brandtext span { color: var(--brand); }
 nav a.link { color: var(--sub); text-decoration: none; font-size: 15px; }
 nav a.link:hover { color: var(--text); }
 nav .spacer { flex: 1; }
-nav a.navcta { background: var(--green); color: #04140a; font-weight: 700; font-size: 14px; padding: 8px 16px; border-radius: 8px; text-decoration: none; }
+nav a.navcta { background: var(--brand); color: var(--on-brand); font-weight: 700; font-size: 14px; padding: 8px 16px; border-radius: 8px; text-decoration: none; }
 header.hero { padding: 84px 0 60px; }
 .kicker { color: var(--sub); font-size: 15px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 18px; }
 h1 { font-size: clamp(34px, 6vw, 56px); line-height: 1.12; font-weight: 800; }
-h1 .green { color: var(--green); }
+h1 .accent { color: var(--brand); }
 .lede { color: var(--sub); font-size: 20px; margin-top: 22px; max-width: 620px; }
-.cta { display: inline-block; margin-top: 34px; background: var(--green); color: #04140a; font-weight: 700; font-size: 17px; padding: 14px 26px; border-radius: 10px; text-decoration: none; }
-.cta.secondary { background: transparent; color: var(--text); border: 1px solid var(--track); margin-left: 12px; }
-section { padding: 56px 0; border-top: 1px solid var(--track); }
+.cta { display: inline-block; margin-top: 34px; background: var(--brand); color: var(--on-brand); font-weight: 700; font-size: 17px; padding: 14px 26px; border-radius: 10px; text-decoration: none; }
+.cta.secondary { background: var(--panel); color: var(--text); border: 1px solid #cfc7b8; margin-left: 12px; }
+section { padding: 56px 0; border-top: 1px solid var(--line); }
 h2 { font-size: 26px; font-weight: 700; margin-bottom: 24px; }
 h3 { font-size: 18px; }
 p { margin-bottom: 14px; }
 .sub { color: var(--sub); }
-a { color: var(--green); }
+a { color: var(--brand); }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; margin-top: 8px; }
-.card { background: var(--panel); border: 1px solid var(--track); border-radius: 12px; padding: 22px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
 .card h3 { margin-bottom: 8px; }
 .card p { color: var(--sub); font-size: 15px; margin-bottom: 0; }
 .tier { display: flex; flex-direction: column; }
-.tier .price { font-size: 30px; font-weight: 800; color: var(--green); margin: 6px 0 2px; }
+.tier .price { font-size: 30px; font-weight: 800; color: var(--brand); margin: 6px 0 2px; }
 .tier .per { color: var(--sub); font-size: 14px; margin-bottom: 12px; }
 .tier ul { list-style: none; margin: 0 0 6px; }
 .tier li { color: var(--sub); font-size: 15px; padding-left: 20px; position: relative; margin-bottom: 7px; }
-.tier li::before { content: "\2022"; color: var(--green); position: absolute; left: 4px; }
+.tier li::before { content: "\2022"; color: var(--brand); position: absolute; left: 4px; }
 ul.findings { list-style: none; }
 ul.findings li { padding-left: 24px; position: relative; margin-bottom: 10px; }
-ul.findings li::before { content: "\2192"; color: var(--green); position: absolute; left: 0; }
-.integrity { background: var(--panel); border-left: 3px solid var(--yellow); border-radius: 0 10px 10px 0; padding: 20px 22px; margin-top: 10px; }
+ul.findings li::before { content: "\2192"; color: var(--brand); position: absolute; left: 0; }
+.integrity { background: var(--panel); border-left: 3px solid var(--mid); border-radius: 0 10px 10px 0; padding: 20px 22px; margin-top: 10px; }
 .steps { counter-reset: step; }
 .step { display: flex; gap: 18px; margin-bottom: 22px; }
-.step .num { counter-increment: step; flex: 0 0 40px; height: 40px; border-radius: 50%; background: var(--panel); border: 1px solid var(--track); color: var(--green); font-weight: 800; display: flex; align-items: center; justify-content: center; }
+.step .num { counter-increment: step; flex: 0 0 40px; height: 40px; border-radius: 50%; background: var(--panel); border: 1px solid var(--line); color: var(--brand); font-weight: 800; display: flex; align-items: center; justify-content: center; }
 .step .num::before { content: counter(step); }
 .step p { color: var(--sub); margin: 0; }
 .step h3 { margin-bottom: 4px; }
-details { border: 1px solid var(--track); border-radius: 10px; padding: 16px 18px; margin-bottom: 12px; background: var(--panel); }
+details { border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-bottom: 12px; background: var(--panel); }
 details summary { cursor: pointer; font-weight: 600; }
 details p { color: var(--sub); margin: 12px 0 0; font-size: 15px; }
-footer { padding: 44px 0 70px; border-top: 1px solid var(--track); color: var(--sub); font-size: 13.5px; }
+footer { padding: 44px 0 70px; border-top: 1px solid var(--line); color: var(--sub); font-size: 13.5px; }
 footer p { margin-bottom: 8px; }
 /* report pages */
 .report-meta { color: var(--sub); font-size: 15px; margin-top: 10px; }
-.verdict-banner { border-radius: 12px; padding: 22px 24px; margin: 28px 0; background: var(--panel); border: 1px solid var(--track); border-left: 4px solid var(--red); }
-.verdict-banner.organic { border-left-color: var(--green); }
-.verdict-banner .score { font-size: 34px; font-weight: 800; color: var(--red); }
+.verdict-banner { border-radius: 12px; padding: 22px 24px; margin: 28px 0; background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--bad); }
+.verdict-banner.organic { border-left-color: var(--ok); }
+.verdict-banner .score { font-size: 34px; font-weight: 800; color: var(--bad); }
 table { width: 100%; border-collapse: collapse; margin: 14px 0 8px; font-size: 15px; }
-th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--track); }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
 th { color: var(--sub); font-weight: 600; font-size: 13.5px; text-transform: uppercase; letter-spacing: 1px; }
-td .red { color: var(--red); font-weight: 700; }
-td .green { color: var(--green); font-weight: 700; }
-img.chart { max-width: 100%; border-radius: 12px; border: 1px solid var(--track); margin: 10px 0; }
+td .flag { color: var(--bad); font-weight: 700; }
+td .ok { color: var(--ok); font-weight: 700; }
+img.chart { max-width: 100%; border-radius: 12px; border: 1px solid var(--line); margin: 10px 0; }
 .note { background: var(--panel); border-radius: 10px; padding: 16px 18px; color: var(--sub); font-size: 14.5px; }
 
 /* Audit request form. Inline rather than a link out to a hosted form: the
@@ -73,16 +80,16 @@ img.chart { max-width: 100%; border-radius: 12px; border: 1px solid var(--track)
 .form label { display: block; font-size: 14px; color: var(--sub); margin-bottom: 6px; }
 .form input, .form select, .form textarea {
   width: 100%; background: var(--panel); color: var(--text);
-  border: 1px solid var(--track); border-radius: 8px; padding: 12px 14px;
+  border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px;
   font-family: inherit; font-size: 15px; line-height: 1.5;
 }
 .form textarea { min-height: 110px; resize: vertical; }
 .form input:focus, .form select:focus, .form textarea:focus {
-  outline: none; border-color: var(--green);
+  outline: none; border-color: var(--brand);
 }
-.form input::placeholder, .form textarea::placeholder { color: #5a6472; }
+.form input::placeholder, .form textarea::placeholder { color: #7d776b; }
 .form button {
-  justify-self: start; background: var(--green); color: #04140a; font-weight: 700;
+  justify-self: start; background: var(--brand); color: var(--on-brand); font-weight: 700;
   font-size: 17px; padding: 14px 26px; border: 0; border-radius: 10px;
   cursor: pointer; font-family: inherit;
 }

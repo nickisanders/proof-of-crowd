@@ -19,7 +19,7 @@ HERE = Path(__file__).resolve().parent
 _spec = importlib.util.spec_from_file_location("make_logo", HERE / "make_logo.py")
 _logo = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_logo)
-BG, TEXT, SUB, GREEN, PANEL = "#0d1117", "#e6edf3", "#8b949e", "#3fb950", "#161b22"
+BG, TEXT, SUB, GREEN, PANEL = "#f6f3ec", "#15171c", "#6e6a60", "#1b3a6b", "#ffffff"
 FONT = "system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
 W, H = 1200, 630
 
@@ -51,13 +51,13 @@ def txt(x, y, size, fill, s, weight=400) -> str:
 svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
 <rect width="{W}" height="{H}" fill="{BG}"/>
 <rect x="0" y="0" width="{W}" height="8" fill="{GREEN}"/>
-<g transform="translate(866,196) scale(3.5)" opacity="0.92">{_logo.mark()}</g>
+<g transform="translate(866,196) scale(3.5)" opacity="1">{_logo.mark()}</g>
 {txt(72, 112, 26, SUB, "PROOF OF CROWD")}
 {txt(72, 212, 62, TEXT, "Is that token's", 700)}
 {txt(72, 284, 62, TEXT, "community real?", 700)}
 {txt(72, 356, 27, SUB, "Evidence-based attention audits. Spam analysis,")}
 {txt(72, 396, 27, SUB, "creator concentration, decay signatures.")}
-<rect x="72" y="446" width="1056" height="1" fill="#21262d"/>
+<rect x="72" y="446" width="1056" height="1" fill="#ded8cd"/>
 {txt(72, 508, 24, TEXT, "Open methodology, published daily.", 700)}
 {txt(72, 548, 22, SUB, "The fee buys the audit, not the answer.")}
 {txt(72, 592, 22, GREEN, "proofofcrowd.com", 700)}

@@ -27,25 +27,43 @@ The methodology is developed and stress-tested in public through daily published
 
 ## Brand
 
-The mark is a ring of evenly spaced dots around a solid centre, which reads
-both as a crowd and as a stamp. Even spacing is the whole idea: a real crowd is
-many voices carrying roughly equal weight, and that is the shape the ring
-draws.
+The mark is a fingerprint whose ridges are made of separate dots. Proof drawn
+as the oldest proof there is, and built out of a population, because what this
+product verifies is how many distinct people are really there.
 
-`python3 assets/make_logo.py` rebuilds every variant from one definition, so
-the favicon, the nav icon and the social card can't drift apart.
+The palette is paper and ink, so an audit reads as a document rather than a
+dashboard screenshot. The brand is deliberately not green: when the brand
+colour and the "organic" verdict colour are the same, the logo casts a vote
+just by sitting on the page. Cool ink carries the brand, warm hues and green
+carry judgement, and nothing crosses over.
+
+| Token | | |
+|---|---|---|
+| ground | `#f6f3ec` | panel `#ffffff`, rules `#ded8cd` |
+| text | `#15171c` | secondary `#6e6a60` |
+| brand | `#1b3a6b` | `#7da7e0` on dark grounds, where the navy goes unreadable |
+| verdicts | `#236440` organic | `#7d560c` mixed, `#a33228` manufactured |
+
+Every pair clears WCAG AA at its size. The verdict colours were darkened from
+their first draft, where amber came in at 3.5:1 on paper and failed the
+body-text threshold.
+
+`python3 assets/make_logo.py` rebuilds every logo variant from one definition,
+and `assets/make_og.py` and `assets/make_report_charts.py` import the mark from
+it, so the favicon, the nav icon, the social card and the report figures cannot
+drift apart.
 
 | File | Use |
 |---|---|
-| `assets/logo-wordmark.png` | horizontal lockup, dark ground |
-| `assets/logo-wordmark-light.png` | the same on white |
+| `assets/logo-wordmark.png` | horizontal lockup, paper |
+| `assets/logo-wordmark-dark.png` | the same on ink |
 | `assets/logo-wordmark-mono.png` | single colour, for documents |
 | `assets/logo-mark.png` | square mark, avatars and app icons |
 | `assets/logo-mark-bare.png` | mark with no ground, for arbitrary backgrounds |
 | `assets/favicon-{16,32,180}.png` | browser and Apple touch icons |
 
-Palette: `#0d1117` ground, `#3fb950` accent, `#e6edf3` text. Bold text stays at
-weight 700, since librsvg fakes anything heavier by double-striking the glyphs.
+A fingerprint doesn't survive 16px at full detail, so the favicon runs a
+three-ridge version with much fatter dots at the same silhouette.
 
 ## Integrity policy
 
