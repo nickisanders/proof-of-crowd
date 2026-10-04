@@ -61,9 +61,38 @@ drift apart.
 | `assets/logo-mark.png` | square mark, avatars and app icons |
 | `assets/logo-mark-bare.png` | mark with no ground, for arbitrary backgrounds |
 | `assets/favicon-{16,32,180}.png` | browser and Apple touch icons |
+| `assets/x-avatar-{400,1000}.png` | X profile picture, built for a circular crop |
+| `assets/x-header.png` | X header, 1500x500 |
+
+`python3 assets/make_social.py` rebuilds the X pair. The header leaves its
+lower left empty on purpose, since that is where X lays the profile picture
+over the top.
 
 A fingerprint doesn't survive 16px at full detail, so the favicon runs a
 three-ridge version with much fatter dots at the same silhouette.
+
+## Type
+
+Charter for everything, figures in a monospace. Charter is a reading serif
+drawn for small sizes, so it holds up in a table, and it makes a report look
+like a document instead of a webpage. Figures go mono because an audit's
+numbers should read as measured rather than asserted, and an aligned column
+stops a wider glyph passing for a bigger value.
+
+Two notes for anyone regenerating the imagery:
+
+- `fc-list` listing a family proves nothing. librsvg goes through pango, which
+  cannot load several macOS `.ttc` collections and then falls back to Helvetica
+  without saying so. Verify by rendering against a deliberately fake family
+  name and comparing. Iowan Old Style, Superclarendon, Seravek, Hoefler Text,
+  Marion and Athelas all fail this way here.
+- Bold weights need no hand-set word spacing. That workaround existed because
+  librsvg faked a bold Helvetica by double-striking glyphs, which swallowed the
+  spaces. Charter ships a real bold, so real spaces work.
+
+The site stack is `Charter, "Bitstream Charter", "Charis SIL", Georgia, serif`,
+which resolves natively on Apple platforms and falls back to Georgia elsewhere.
+Self-hosting an open Charter would close that gap.
 
 ## Integrity policy
 

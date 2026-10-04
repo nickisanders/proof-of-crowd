@@ -26,7 +26,7 @@ SHARP = "/Users/nicki/lunarcrush-projects/projects/crowd-size/node_modules/sharp
 # the mark: the brand must not imply a verdict just by being on the page.
 PAPER, INK, BRAND = "#f6f3ec", "#15171c", "#1b3a6b"
 BRAND_ON_DARK = "#7da7e0"   # the navy is unreadable on ink, so it lifts
-FONT = "system-ui,-apple-system,Helvetica,Arial,sans-serif"
+FONT = "Charter, Georgia, serif"
 SWEEP, START = 220, 160     # degrees; the arc is open at the bottom
 
 
@@ -60,13 +60,13 @@ def svg(w, h, body, bg=PAPER) -> str:
 def wordmark(accent, text, bg) -> str:
     """Horizontal lockup, the proportion the site nav and a banner want.
 
-    Weight stays at 700. There is no heavier face installed, so librsvg fakes
-    one by drawing every glyph twice at an offset, which reads as a smear.
+    Weight stays at 700. Charter has a real bold face, so librsvg sets it
+    directly instead of faking one by double-striking the glyphs.
     """
     return svg(480, 128,
         f'<g transform="translate(20,30)">{mark(accent)}</g>'
         f'<text x="104" y="76" font-size="38" font-weight="700" font-family="{FONT}" '
-        f'fill="{text}">Proof of<tspan dx="9" fill="{accent}">Crowd</tspan></text>', bg)
+        f'fill="{text}">Proof of<tspan dx="12" fill="{accent}">Crowd</tspan></text>', bg)
 
 
 def render(name, source, out_w=None):

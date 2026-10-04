@@ -8,9 +8,16 @@
   --text: #15171c; --sub: #6e6a60;
   --brand: #1b3a6b; --on-brand: #ffffff;
   --ok: #236440; --mid: #7d560c; --bad: #a33228;
+
+  /* Charter throughout, with Georgia as the stand-in where Charter is absent.
+     Figures go in a monospace: an audit's numbers should read as measured
+     rather than asserted, and an aligned column stops a wider glyph passing
+     for a bigger value. */
+  --serif: Charter, "Bitstream Charter", "Charis SIL", Georgia, serif;
+  --mono: ui-monospace, Menlo, "SF Mono", "Cascadia Mono", "Roboto Mono", monospace;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; }
+body { background: var(--bg); color: var(--text); font-family: var(--serif); line-height: 1.62; }
 .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
 nav { display: flex; align-items: center; gap: 26px; padding: 22px 0; border-bottom: 1px solid var(--line); }
 nav .brand { display: inline-flex; align-items: center; gap: 9px; font-weight: 800; font-size: 17px; color: var(--text); text-decoration: none; letter-spacing: 0.3px; }
@@ -97,3 +104,11 @@ img.chart { max-width: 100%; border-radius: 12px; border: 1px solid var(--line);
 .form .note { font-size: 13.5px; color: var(--sub); }
 .form .hp { position: absolute; left: -9999px; }
 @media (max-width: 620px) { .form .row { grid-template-columns: 1fr; } }
+
+/* Figures. Applied where a number is the point: the verdict score, the prices,
+   and the value column of a report table. */
+/* Only the figure goes mono. The verdict is a word and belongs in Charter. */
+.fig, .tier .price { font-family: var(--mono); letter-spacing: -0.5px; }
+.report-table td:nth-child(2) { font-family: var(--mono); font-size: 14px; }
+.kicker, nav a.link, th { font-family: var(--mono); }
+th { letter-spacing: 0.5px; }

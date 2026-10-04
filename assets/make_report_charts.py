@@ -13,7 +13,8 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 SHARP = "/Users/nicki/lunarcrush-projects/projects/crowd-size/node_modules/sharp"
-FONT = "system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+FONT = "Charter, Georgia, serif"
+MONO = "Menlo, ui-monospace, monospace"
 
 GROUND, INK, SUB, RULE = "#ffffff", "#15171c", "#6e6a60", "#ded8cd"
 NEUTRAL, OK, BAD = "#8d8578", "#236440", "#a33228"   # all clear 3:1 on white
@@ -23,19 +24,16 @@ def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def heavy(text, size):
-    """librsvg drops word spaces at bold weights, so set them by hand."""
-    w = text.split(" ")
-    out = [esc(w[0])]
-    for prev, nxt in zip(w, w[1:]):
-        out.append(f'<tspan dx="{size * (0.45 if prev.endswith("%") else 0.30):.0f}">{esc(nxt)}</tspan>')
-    return "".join(out)
+# Charter ships a real bold face, so librsvg keeps the word spaces and the
+# hand-set spacing this file used to need is gone.
 
 
-def txt(x, y, size, fill, s, weight=400, anchor="start"):
-    body = heavy(s, size) if weight >= 700 and " " in s else esc(s)
+def txt(x, y, size, fill, s, weight=400, anchor="start", font=None):
+    """Figures go in MONO. An audit's numbers should read as measured rather
+    than asserted, and a monospace column also stops the eye from mistaking a
+    wider glyph for a bigger value."""
     return (f'<text x="{x}" y="{y}" font-size="{size}" fill="{fill}" font-weight="{weight}" '
-            f'text-anchor="{anchor}" font-family="{FONT}">{body}</text>')
+            f'text-anchor="{anchor}" font-family="{font or FONT}">{esc(s)}</text>')
 
 
 def render(name, w, h, body, scale=2):
@@ -63,7 +61,7 @@ for i, (day, val, label) in enumerate(DAYS):
     flagged = day == "Jul 31"
     body.append(f'<rect x="{x:.1f}" y="{BASE - h:.1f}" width="{bw:.1f}" height="{h:.1f}" rx="4" '
                 f'fill="{BAD if flagged else NEUTRAL}"/>')
-    body.append(txt(x + bw / 2, BASE - h - 14, 24, BAD if flagged else INK, label, 700, "middle"))
+    body.append(txt(x + bw / 2, BASE - h - 14, 23, BAD if flagged else INK, label, 700, "middle", MONO))
     body.append(txt(x + bw / 2, 592, 19, SUB, day, 400, "middle"))
 body += [f'<rect x="60" y="{BASE}" width="{SPAN}" height="1.5" fill="{RULE}"/>',
          txt(60, 644, 24, INK, "Latest day retains 3% of the spike's volume.", 700),
@@ -86,7 +84,7 @@ for i, (label, note, val, color) in enumerate(COLS):
     x = 80 + i * (CW + 130)
     h = max(10, MAXH2 * val / top)
     body.append(f'<rect x="{x}" y="{BASE2 - h:.1f}" width="{CW}" height="{h:.1f}" rx="4" fill="{color}"/>')
-    body.append(txt(x + CW / 2, BASE2 - h - 16, 34, color, str(val), 700, "middle"))
+    body.append(txt(x + CW / 2, BASE2 - h - 16, 33, color, str(val), 700, "middle", MONO))
     body.append(txt(x + CW / 2, 642, 24, INK, label, 400, "middle"))
     body.append(txt(x + CW / 2, 672, 18, SUB, note, 400, "middle"))
 body += [f'<rect x="60" y="{BASE2}" width="1080" height="1.5" fill="{RULE}"/>',

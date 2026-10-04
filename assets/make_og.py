@@ -20,7 +20,8 @@ _spec = importlib.util.spec_from_file_location("make_logo", HERE / "make_logo.py
 _logo = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_logo)
 BG, TEXT, SUB, GREEN, PANEL = "#f6f3ec", "#15171c", "#6e6a60", "#1b3a6b", "#ffffff"
-FONT = "system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+FONT = "Charter, Georgia, serif"
+MONO = "Menlo, ui-monospace, monospace"
 W, H = 1200, 630
 
 
@@ -28,22 +29,14 @@ def esc(s: str) -> str:
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def heavy(text: str, size: int) -> str:
-    """librsvg drops word spaces at bold weights, so space the words by hand.
-
-    Weights above 700 are worse than useless here: there is no face that heavy
-    installed, so librsvg fakes one by drawing every glyph twice at an offset,
-    which comes out as a ghosted smear at headline size. Everything bold on
-    this card stays at 700."""
-    words = text.split(" ")
-    parts = [esc(words[0])]
-    for prev, w in zip(words, words[1:]):
-        parts.append(f'<tspan dx="{size * (0.45 if prev.endswith('%') else 0.30):.0f}">{esc(w)}</tspan>')
-    return "".join(parts)
+# The hand-set word spacing that used to live here is gone. It existed because
+# librsvg faked a bold Helvetica by double-striking glyphs, which swallowed the
+# spaces. Charter ships a real bold, so real spaces work and the old hack would
+# now double them.
 
 
 def txt(x, y, size, fill, s, weight=400) -> str:
-    body = heavy(s, size) if weight >= 700 and " " in s else esc(s)
+    body = esc(s)
     return (f'<text x="{x}" y="{y}" font-size="{size}" fill="{fill}" '
             f'font-weight="{weight}" font-family="{FONT}">{body}</text>')
 
