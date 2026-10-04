@@ -20,8 +20,11 @@
 body { background: var(--bg); color: var(--text); font-family: var(--serif); line-height: 1.62; }
 .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
 nav { display: flex; align-items: center; gap: 26px; padding: 22px 0; border-bottom: 1px solid var(--line); }
-nav .brand { display: inline-flex; align-items: center; gap: 9px; font-weight: 800; font-size: 17px; color: var(--text); text-decoration: none; letter-spacing: 0.3px; }
-nav .brand .brandmark { flex: none; }
+/* Charter tops out at a real 700; 800 only gets synthesised and muddies at
+   small sizes. Size is set here rather than on the SVG so the two stay in
+   proportion from one place. */
+nav .brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 700; font-size: 24px; color: var(--text); text-decoration: none; }
+nav .brand .brandmark { flex: none; width: 34px; height: 34px; }
 nav .brand .brandtext { white-space: nowrap; }
 nav .brand .brandtext span { color: var(--brand); }
 nav a.link { color: var(--sub); text-decoration: none; font-size: 15px; }
@@ -104,6 +107,18 @@ img.chart { max-width: 100%; border-radius: 12px; border: 1px solid var(--line);
 .form .note { font-size: 13.5px; color: var(--sub); }
 .form .hp { position: absolute; left: -9999px; }
 @media (max-width: 620px) { .form .row { grid-template-columns: 1fr; } }
+
+/* The brand is sized for desktop, where it has the room. At phone width that
+   same size pushes the call to action off the edge, so it steps down and the
+   sample-report link drops out: the hero carries a button to the same page a
+   few lines below, so nothing becomes unreachable. */
+@media (max-width: 620px) {
+  nav { gap: 14px; padding: 18px 0; }
+  nav .brand { font-size: 19px; gap: 9px; }
+  nav .brand .brandmark { width: 26px; height: 26px; }
+  nav a.link { display: none; }
+  nav a.navcta { font-size: 13px; padding: 7px 13px; }
+}
 
 /* Figures. Applied where a number is the point: the verdict score, the prices,
    and the value column of a report table. */
