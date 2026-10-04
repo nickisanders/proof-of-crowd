@@ -6,8 +6,10 @@
 body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; }
 .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
 nav { display: flex; align-items: center; gap: 26px; padding: 22px 0; border-bottom: 1px solid var(--track); }
-nav .brand { font-weight: 800; font-size: 17px; color: var(--text); text-decoration: none; letter-spacing: 0.3px; }
-nav .brand span { color: var(--green); }
+nav .brand { display: inline-flex; align-items: center; gap: 9px; font-weight: 800; font-size: 17px; color: var(--text); text-decoration: none; letter-spacing: 0.3px; }
+nav .brand .brandmark { flex: none; }
+nav .brand .brandtext { white-space: nowrap; }
+nav .brand .brandtext span { color: var(--green); }
 nav a.link { color: var(--sub); text-decoration: none; font-size: 15px; }
 nav a.link:hover { color: var(--text); }
 nav .spacer { flex: 1; }
