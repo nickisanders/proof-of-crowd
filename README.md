@@ -2,7 +2,7 @@
 
 Evidence-based attention audits for tokens: is the community real?
 
-**Site:** [nickisanders.github.io/proof-of-crowd](https://nickisanders.github.io/proof-of-crowd/)
+**Site:** [proofofcrowd.com](https://proofofcrowd.com)
 
 An audit answers one question with evidence: who is actually talking about a token, how much of that conversation is manufactured, and whether its attention compounds or round-trips. Verdicts describe measurable conversation patterns (spam waves vs the token's own baseline, creator concentration, decay and residue signatures); they never claim to identify who is behind amplification.
 
