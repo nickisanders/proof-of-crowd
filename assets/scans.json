@@ -1,398 +1,2609 @@
 {
- "generated": "2026-10-05T01:44:00+00:00",
- "population": 30,
+ "generated": "2026-10-05T02:36:47+00:00",
+ "population": 200,
  "unavailable": [],
+ "excluded_thin": [],
  "note": "Percentiles are ranks within this scanned population, not absolute thresholds.",
  "tokens": {
-  "aave": {
-   "posts": 100,
-   "creator_concentration": 0.2926,
-   "duplicate_text": 0.0303,
-   "cross_token_overlap": 0.0653,
+  "1inch": {
+   "posts": 170,
+   "creator_concentration": 0.4988,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0001,
    "percentiles": {
-    "creator_concentration": 0.133,
-    "duplicate_text": 0.6,
-    "cross_token_overlap": 0.433
+    "creator_concentration": 0.46,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.125
    },
    "band": "nothing unusual",
    "flags": 0
   },
+  "2z": {
+   "posts": 178,
+   "creator_concentration": 0.4091,
+   "duplicate_text": 0.0405,
+   "cross_token_overlap": 0.0055,
+   "percentiles": {
+    "creator_concentration": 0.295,
+    "duplicate_text": 0.835,
+    "cross_token_overlap": 0.33
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "a": {
+   "posts": 400,
+   "creator_concentration": 0.2488,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.011,
+   "percentiles": {
+    "creator_concentration": 0.095,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.405
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "aave": {
+   "posts": 100,
+   "creator_concentration": 0.3106,
+   "duplicate_text": 0.0303,
+   "cross_token_overlap": 0.3455,
+   "percentiles": {
+    "creator_concentration": 0.175,
+    "duplicate_text": 0.765,
+    "cross_token_overlap": 0.775
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "aerodrome-finance": {
+   "posts": 30,
+   "creator_concentration": 0.8848,
+   "duplicate_text": 0.1333,
+   "cross_token_overlap": 0.1066,
+   "percentiles": {
+    "creator_concentration": 0.89,
+    "duplicate_text": 0.955,
+    "cross_token_overlap": 0.595
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "aethir": {
+   "posts": 41,
+   "creator_concentration": 0.9208,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.2223,
+   "percentiles": {
+    "creator_concentration": 0.915,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.675
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "aioz": {
+   "posts": 143,
+   "creator_concentration": 0.7636,
+   "duplicate_text": 0.0382,
+   "cross_token_overlap": 0.0094,
+   "percentiles": {
+    "creator_concentration": 0.78,
+    "duplicate_text": 0.825,
+    "cross_token_overlap": 0.395
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "akash-network": {
+   "posts": 100,
+   "creator_concentration": 0.5744,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.5424,
+   "percentiles": {
+    "creator_concentration": 0.54,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.84
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "akedo": {
+   "posts": 79,
+   "creator_concentration": 0.7419,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.038,
+   "percentiles": {
+    "creator_concentration": 0.77,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.525
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "algorand": {
+   "posts": 101,
+   "creator_concentration": 0.3827,
+   "duplicate_text": 0.0404,
+   "cross_token_overlap": 0.7549,
+   "percentiles": {
+    "creator_concentration": 0.25,
+    "duplicate_text": 0.83,
+    "cross_token_overlap": 0.93
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "apecoin": {
+   "posts": 101,
+   "creator_concentration": 0.456,
+   "duplicate_text": 0.1075,
+   "cross_token_overlap": 0.0647,
+   "percentiles": {
+    "creator_concentration": 0.385,
+    "duplicate_text": 0.94,
+    "cross_token_overlap": 0.565
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "apepe": {
+   "posts": 50,
+   "creator_concentration": 0.9578,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.955,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.0
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
   "aptos": {
    "posts": 100,
-   "creator_concentration": 0.5429,
+   "creator_concentration": 0.4318,
    "duplicate_text": 0.0,
-   "cross_token_overlap": 0.3252,
+   "cross_token_overlap": 0.7686,
    "percentiles": {
-    "creator_concentration": 0.567,
+    "creator_concentration": 0.335,
     "duplicate_text": 0.0,
-    "cross_token_overlap": 0.767
+    "cross_token_overlap": 0.94
    },
    "band": "one signal elevated",
    "flags": 1
   },
   "arbitrum": {
    "posts": 100,
-   "creator_concentration": 0.616,
+   "creator_concentration": 0.4547,
    "duplicate_text": 0.0303,
-   "cross_token_overlap": 0.6029,
+   "cross_token_overlap": 0.7771,
    "percentiles": {
-    "creator_concentration": 0.8,
-    "duplicate_text": 0.6,
-    "cross_token_overlap": 0.867
+    "creator_concentration": 0.375,
+    "duplicate_text": 0.765,
+    "cross_token_overlap": 0.95
    },
    "band": "two signals elevated",
    "flags": 2
   },
-  "avalanche": {
-   "posts": 53,
-   "creator_concentration": 0.6848,
+  "arweave": {
+   "posts": 61,
+   "creator_concentration": 0.9888,
    "duplicate_text": 0.0,
-   "cross_token_overlap": 0.0,
+   "cross_token_overlap": 0.0071,
    "percentiles": {
-    "creator_concentration": 0.867,
+    "creator_concentration": 0.98,
     "duplicate_text": 0.0,
-    "cross_token_overlap": 0.0
+    "cross_token_overlap": 0.355
    },
    "band": "one signal elevated",
    "flags": 1
   },
-  "bitcoin": {
-   "posts": 444,
-   "creator_concentration": 0.3753,
+  "aster": {
+   "posts": 100,
+   "creator_concentration": 0.4641,
    "duplicate_text": 0.0,
-   "cross_token_overlap": 0.0034,
+   "cross_token_overlap": 0.6011,
    "percentiles": {
-    "creator_concentration": 0.267,
+    "creator_concentration": 0.425,
     "duplicate_text": 0.0,
-    "cross_token_overlap": 0.233
+    "cross_token_overlap": 0.855
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "ausd": {
+   "posts": 60,
+   "creator_concentration": 0.8701,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0891,
+   "percentiles": {
+    "creator_concentration": 0.865,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.585
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "avax": {
+   "posts": 221,
+   "creator_concentration": 0.5145,
+   "duplicate_text": 0.0138,
+   "cross_token_overlap": 0.3255,
+   "percentiles": {
+    "creator_concentration": 0.485,
+    "duplicate_text": 0.63,
+    "cross_token_overlap": 0.74
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "awe": {
+   "posts": 467,
+   "creator_concentration": 0.1828,
+   "duplicate_text": 0.0152,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.04,
+    "duplicate_text": 0.655,
+    "cross_token_overlap": 0.0
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "axs": {
+   "posts": 354,
+   "creator_concentration": 0.811,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0083,
+   "percentiles": {
+    "creator_concentration": 0.815,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.38
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "backpack": {
+   "posts": 468,
+   "creator_concentration": 0.1591,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0557,
+   "percentiles": {
+    "creator_concentration": 0.015,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.555
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "bat": {
+   "posts": 499,
+   "creator_concentration": 0.2521,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.105,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.0
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "bdx": {
+   "posts": 263,
+   "creator_concentration": 0.3912,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0028,
+   "percentiles": {
+    "creator_concentration": 0.255,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.285
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "bgb": {
+   "posts": 186,
+   "creator_concentration": 0.7993,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.7332,
+   "percentiles": {
+    "creator_concentration": 0.805,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.925
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "bitcoin": {
+   "posts": 457,
+   "creator_concentration": 0.3619,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0348,
+   "percentiles": {
+    "creator_concentration": 0.22,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.505
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "bitcoin-cash": {
+   "posts": 118,
+   "creator_concentration": 0.9245,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.9068,
+   "percentiles": {
+    "creator_concentration": 0.925,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.99
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "bittensor": {
+   "posts": 136,
+   "creator_concentration": 0.2807,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.4515,
+   "percentiles": {
+    "creator_concentration": 0.135,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.815
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "bittorrent": {
+   "posts": 49,
+   "creator_concentration": 0.4037,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.2809,
+   "percentiles": {
+    "creator_concentration": 0.285,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.695
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "bitway": {
+   "posts": 73,
+   "creator_concentration": 0.8533,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0377,
+   "percentiles": {
+    "creator_concentration": 0.855,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.52
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "bnb": {
+   "posts": 315,
+   "creator_concentration": 0.5007,
+   "duplicate_text": 0.0101,
+   "cross_token_overlap": 0.0164,
+   "percentiles": {
+    "creator_concentration": 0.475,
+    "duplicate_text": 0.555,
+    "cross_token_overlap": 0.435
    },
    "band": "nothing unusual",
    "flags": 0
   },
   "bonk": {
    "posts": 100,
-   "creator_concentration": 0.5728,
+   "creator_concentration": 0.5316,
    "duplicate_text": 0.1458,
-   "cross_token_overlap": 0.6197,
+   "cross_token_overlap": 0.6117,
    "percentiles": {
-    "creator_concentration": 0.667,
-    "duplicate_text": 0.933,
-    "cross_token_overlap": 0.9
+    "creator_concentration": 0.49,
+    "duplicate_text": 0.98,
+    "cross_token_overlap": 0.87
    },
    "band": "two signals elevated",
    "flags": 2
   },
-  "cardano": {
-   "posts": 282,
-   "creator_concentration": 0.6153,
-   "duplicate_text": 0.0287,
-   "cross_token_overlap": 0.0878,
+  "borg": {
+   "posts": 352,
+   "creator_concentration": 0.7269,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0009,
    "percentiles": {
-    "creator_concentration": 0.767,
-    "duplicate_text": 0.567,
-    "cross_token_overlap": 0.5
+    "creator_concentration": 0.755,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.215
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "bsv": {
+   "posts": 205,
+   "creator_concentration": 0.7163,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0005,
+   "percentiles": {
+    "creator_concentration": 0.735,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.195
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "btse": {
+   "posts": 54,
+   "creator_concentration": 0.7223,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.75,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.0
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "build-on": {
+   "posts": 415,
+   "creator_concentration": 0.4625,
+   "duplicate_text": 0.0265,
+   "cross_token_overlap": 0.0049,
+   "percentiles": {
+    "creator_concentration": 0.41,
+    "duplicate_text": 0.74,
+    "cross_token_overlap": 0.315
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "cake": {
+   "posts": 499,
+   "creator_concentration": 0.1725,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0001,
+   "percentiles": {
+    "creator_concentration": 0.025,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.125
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "canton-network": {
+   "posts": 187,
+   "creator_concentration": 0.9914,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0041,
+   "percentiles": {
+    "creator_concentration": 0.985,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.305
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "cardano": {
+   "posts": 277,
+   "creator_concentration": 0.619,
+   "duplicate_text": 0.0109,
+   "cross_token_overlap": 0.1486,
+   "percentiles": {
+    "creator_concentration": 0.6,
+    "duplicate_text": 0.57,
+    "cross_token_overlap": 0.635
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "cash-cat": {
+   "posts": 120,
+   "creator_concentration": 0.7527,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.022,
+   "percentiles": {
+    "creator_concentration": 0.775,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.46
    },
    "band": "one signal elevated",
    "flags": 1
   },
   "celestia": {
    "posts": 319,
-   "creator_concentration": 0.196,
+   "creator_concentration": 0.1916,
    "duplicate_text": 0.0,
-   "cross_token_overlap": 0.0005,
+   "cross_token_overlap": 0.0008,
    "percentiles": {
-    "creator_concentration": 0.0,
+    "creator_concentration": 0.06,
     "duplicate_text": 0.0,
-    "cross_token_overlap": 0.167
+    "cross_token_overlap": 0.21
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "cfx": {
+   "posts": 248,
+   "creator_concentration": 0.4703,
+   "duplicate_text": 0.0254,
+   "cross_token_overlap": 0.0016,
+   "percentiles": {
+    "creator_concentration": 0.43,
+    "duplicate_text": 0.725,
+    "cross_token_overlap": 0.255
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "chain-2": {
+   "posts": 86,
+   "creator_concentration": 0.4994,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0223,
+   "percentiles": {
+    "creator_concentration": 0.465,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.47
    },
    "band": "nothing unusual",
    "flags": 0
   },
   "chainlink": {
-   "posts": 220,
-   "creator_concentration": 0.3718,
-   "duplicate_text": 0.0184,
-   "cross_token_overlap": 0.1715,
+   "posts": 218,
+   "creator_concentration": 0.439,
+   "duplicate_text": 0.014,
+   "cross_token_overlap": 0.2962,
    "percentiles": {
-    "creator_concentration": 0.233,
-    "duplicate_text": 0.4,
-    "cross_token_overlap": 0.6
+    "creator_concentration": 0.35,
+    "duplicate_text": 0.64,
+    "cross_token_overlap": 0.71
    },
    "band": "nothing unusual",
    "flags": 0
   },
-  "dogecoin": {
-   "posts": 263,
-   "creator_concentration": 0.4977,
-   "duplicate_text": 0.0192,
-   "cross_token_overlap": 0.1188,
+  "chiliz": {
+   "posts": 37,
+   "creator_concentration": 0.7381,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.2513,
    "percentiles": {
-    "creator_concentration": 0.533,
-    "duplicate_text": 0.433,
-    "cross_token_overlap": 0.567
+    "creator_concentration": 0.765,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.68
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "coco-2": {
+   "posts": 115,
+   "creator_concentration": 0.5653,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.525,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.0
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "collector-crypt": {
+   "posts": 117,
+   "creator_concentration": 0.4602,
+   "duplicate_text": 0.094,
+   "cross_token_overlap": 0.1306,
+   "percentiles": {
+    "creator_concentration": 0.405,
+    "duplicate_text": 0.925,
+    "cross_token_overlap": 0.62
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "comp": {
+   "posts": 436,
+   "creator_concentration": 0.5815,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.555,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.0
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "convex-finance": {
+   "posts": 70,
+   "creator_concentration": 0.6614,
+   "duplicate_text": 0.1286,
+   "cross_token_overlap": 0.4717,
+   "percentiles": {
+    "creator_concentration": 0.665,
+    "duplicate_text": 0.95,
+    "cross_token_overlap": 0.82
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "cosmos": {
+   "posts": 361,
+   "creator_concentration": 0.507,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0152,
+   "percentiles": {
+    "creator_concentration": 0.48,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.425
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "cro": {
+   "posts": 380,
+   "creator_concentration": 0.9206,
+   "duplicate_text": 0.0111,
+   "cross_token_overlap": 0.0005,
+   "percentiles": {
+    "creator_concentration": 0.91,
+    "duplicate_text": 0.58,
+    "cross_token_overlap": 0.195
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "curve-dao-token": {
+   "posts": 100,
+   "creator_concentration": 0.7033,
+   "duplicate_text": 0.0312,
+   "cross_token_overlap": 0.7327,
+   "percentiles": {
+    "creator_concentration": 0.725,
+    "duplicate_text": 0.785,
+    "cross_token_overlap": 0.92
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "dash": {
+   "posts": 102,
+   "creator_concentration": 0.5647,
+   "duplicate_text": 0.0833,
+   "cross_token_overlap": 0.176,
+   "percentiles": {
+    "creator_concentration": 0.52,
+    "duplicate_text": 0.91,
+    "cross_token_overlap": 0.655
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "dcr": {
+   "posts": 312,
+   "creator_concentration": 0.6672,
+   "duplicate_text": 0.2566,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.67,
+    "duplicate_text": 0.99,
+    "cross_token_overlap": 0.0
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "derive": {
+   "posts": 249,
+   "creator_concentration": 0.8341,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0011,
+   "percentiles": {
+    "creator_concentration": 0.84,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.23
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "dgai": {
+   "posts": 53,
+   "creator_concentration": 0.9804,
+   "duplicate_text": 0.0755,
+   "cross_token_overlap": 0.0094,
+   "percentiles": {
+    "creator_concentration": 0.97,
+    "duplicate_text": 0.9,
+    "cross_token_overlap": 0.395
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "dogecoin": {
+   "posts": 256,
+   "creator_concentration": 0.5339,
+   "duplicate_text": 0.0118,
+   "cross_token_overlap": 0.6098,
+   "percentiles": {
+    "creator_concentration": 0.495,
+    "duplicate_text": 0.595,
+    "cross_token_overlap": 0.865
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "edge": {
+   "posts": 500,
+   "creator_concentration": 0.4401,
+   "duplicate_text": 0.006,
+   "cross_token_overlap": 0.0354,
+   "percentiles": {
+    "creator_concentration": 0.36,
+    "duplicate_text": 0.525,
+    "cross_token_overlap": 0.51
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "egld": {
+   "posts": 182,
+   "creator_concentration": 0.6293,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.6738,
+   "percentiles": {
+    "creator_concentration": 0.63,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.895
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "eigenlayer": {
+   "posts": 76,
+   "creator_concentration": 0.6987,
+   "duplicate_text": 0.0469,
+   "cross_token_overlap": 0.6679,
+   "percentiles": {
+    "creator_concentration": 0.71,
+    "duplicate_text": 0.845,
+    "cross_token_overlap": 0.89
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "ens": {
+   "posts": 359,
+   "creator_concentration": 0.5356,
+   "duplicate_text": 0.0224,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.5,
+    "duplicate_text": 0.7,
+    "cross_token_overlap": 0.0
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "ethena": {
+   "posts": 102,
+   "creator_concentration": 0.5938,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.3862,
+   "percentiles": {
+    "creator_concentration": 0.565,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.79
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "ether-fi": {
+   "posts": 35,
+   "creator_concentration": 0.6913,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.1936,
+   "percentiles": {
+    "creator_concentration": 0.7,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.665
    },
    "band": "nothing unusual",
    "flags": 0
   },
   "ethereum": {
-   "posts": 331,
-   "creator_concentration": 0.4042,
+   "posts": 332,
+   "creator_concentration": 0.4221,
    "duplicate_text": 0.0,
-   "cross_token_overlap": 0.0165,
+   "cross_token_overlap": 0.1636,
    "percentiles": {
-    "creator_concentration": 0.3,
+    "creator_concentration": 0.325,
     "duplicate_text": 0.0,
-    "cross_token_overlap": 0.267
+    "cross_token_overlap": 0.645
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "ethereum-classic": {
+   "posts": 34,
+   "creator_concentration": 0.8185,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.7759,
+   "percentiles": {
+    "creator_concentration": 0.83,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.945
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "fartcoin": {
+   "posts": 111,
+   "creator_concentration": 0.8866,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.3271,
+   "percentiles": {
+    "creator_concentration": 0.895,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.745
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "fetch-ai": {
+   "posts": 33,
+   "creator_concentration": 0.6986,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.1728,
+   "percentiles": {
+    "creator_concentration": 0.705,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.65
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "ff": {
+   "posts": 457,
+   "creator_concentration": 0.283,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.145,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.0
    },
    "band": "nothing unusual",
    "flags": 0
   },
   "filecoin": {
-   "posts": 53,
-   "creator_concentration": 0.8361,
-   "duplicate_text": 0.0566,
-   "cross_token_overlap": 0.043,
+   "posts": 52,
+   "creator_concentration": 0.8269,
+   "duplicate_text": 0.0588,
+   "cross_token_overlap": 0.1494,
    "percentiles": {
-    "creator_concentration": 0.967,
-    "duplicate_text": 0.8,
-    "cross_token_overlap": 0.367
+    "creator_concentration": 0.835,
+    "duplicate_text": 0.86,
+    "cross_token_overlap": 0.64
    },
    "band": "two signals elevated",
    "flags": 2
   },
   "floki": {
    "posts": 100,
-   "creator_concentration": 0.4437,
-   "duplicate_text": 0.2062,
-   "cross_token_overlap": 0.5472,
+   "creator_concentration": 0.427,
+   "duplicate_text": 0.1939,
+   "cross_token_overlap": 0.692,
    "percentiles": {
-    "creator_concentration": 0.433,
-    "duplicate_text": 0.967,
-    "cross_token_overlap": 0.833
+    "creator_concentration": 0.33,
+    "duplicate_text": 0.985,
+    "cross_token_overlap": 0.91
    },
    "band": "two signals elevated",
    "flags": 2
   },
-  "hedera": {
-   "posts": 111,
-   "creator_concentration": 0.7598,
-   "duplicate_text": 0.055,
-   "cross_token_overlap": 0.2457,
+  "flr": {
+   "posts": 273,
+   "creator_concentration": 0.4032,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0035,
    "percentiles": {
-    "creator_concentration": 0.933,
-    "duplicate_text": 0.767,
-    "cross_token_overlap": 0.733
-   },
-   "band": "two signals elevated",
-   "flags": 2
-  },
-  "injective": {
-   "posts": 100,
-   "creator_concentration": 0.5745,
-   "duplicate_text": 0.0303,
-   "cross_token_overlap": 0.0899,
-   "percentiles": {
-    "creator_concentration": 0.7,
-    "duplicate_text": 0.6,
-    "cross_token_overlap": 0.533
+    "creator_concentration": 0.28,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.295
    },
    "band": "nothing unusual",
    "flags": 0
   },
-  "litecoin": {
-   "posts": 160,
-   "creator_concentration": 0.6113,
-   "duplicate_text": 0.0196,
-   "cross_token_overlap": 0.0842,
+  "geodnet": {
+   "posts": 29,
+   "creator_concentration": 0.7848,
+   "duplicate_text": 0.1379,
+   "cross_token_overlap": 0.7894,
    "percentiles": {
-    "creator_concentration": 0.733,
-    "duplicate_text": 0.467,
-    "cross_token_overlap": 0.467
+    "creator_concentration": 0.79,
+    "duplicate_text": 0.965,
+    "cross_token_overlap": 0.96
+   },
+   "band": "all three signals elevated",
+   "flags": 3
+  },
+  "gho": {
+   "posts": 264,
+   "creator_concentration": 0.4638,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0003,
+   "percentiles": {
+    "creator_concentration": 0.415,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.185
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "glm": {
+   "posts": 392,
+   "creator_concentration": 0.2488,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0018,
+   "percentiles": {
+    "creator_concentration": 0.095,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.26
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "global-dollar": {
+   "posts": 51,
+   "creator_concentration": 0.872,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.001,
+   "percentiles": {
+    "creator_concentration": 0.88,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.22
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "gno": {
+   "posts": 237,
+   "creator_concentration": 0.4566,
+   "duplicate_text": 0.0308,
+   "cross_token_overlap": 0.0001,
+   "percentiles": {
+    "creator_concentration": 0.39,
+    "duplicate_text": 0.78,
+    "cross_token_overlap": 0.125
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "gomining": {
+   "posts": 47,
+   "creator_concentration": 0.9969,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.995,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.0
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "gram": {
+   "posts": 465,
+   "creator_concentration": 0.6741,
+   "duplicate_text": 0.0086,
+   "cross_token_overlap": 0.0001,
+   "percentiles": {
+    "creator_concentration": 0.685,
+    "duplicate_text": 0.545,
+    "cross_token_overlap": 0.125
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "grass": {
+   "posts": 500,
+   "creator_concentration": 0.1828,
+   "duplicate_text": 0.0121,
+   "cross_token_overlap": 0.0054,
+   "percentiles": {
+    "creator_concentration": 0.04,
+    "duplicate_text": 0.605,
+    "cross_token_overlap": 0.325
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "gt": {
+   "posts": 500,
+   "creator_concentration": 0.3031,
+   "duplicate_text": 0.0081,
+   "cross_token_overlap": 0.0002,
+   "percentiles": {
+    "creator_concentration": 0.17,
+    "duplicate_text": 0.54,
+    "cross_token_overlap": 0.16
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "hash": {
+   "posts": 416,
+   "creator_concentration": 0.5911,
+   "duplicate_text": 0.0098,
+   "cross_token_overlap": 0.002,
+   "percentiles": {
+    "creator_concentration": 0.56,
+    "duplicate_text": 0.55,
+    "cross_token_overlap": 0.275
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "hedera-hashgraph": {
+   "posts": 133,
+   "creator_concentration": 0.6105,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.3018,
+   "percentiles": {
+    "creator_concentration": 0.59,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.715
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "humanity": {
+   "posts": 498,
+   "creator_concentration": 0.1893,
+   "duplicate_text": 0.0204,
+   "cross_token_overlap": 0.0011,
+   "percentiles": {
+    "creator_concentration": 0.055,
+    "duplicate_text": 0.685,
+    "cross_token_overlap": 0.23
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "hyperliquid": {
+   "posts": 266,
+   "creator_concentration": 0.3293,
+   "duplicate_text": 0.0115,
+   "cross_token_overlap": 0.343,
+   "percentiles": {
+    "creator_concentration": 0.2,
+    "duplicate_text": 0.585,
+    "cross_token_overlap": 0.77
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "immutable-x": {
+   "posts": 222,
+   "creator_concentration": 0.5668,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0061,
+   "percentiles": {
+    "creator_concentration": 0.53,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.345
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "inj": {
+   "posts": 220,
+   "creator_concentration": 0.6405,
+   "duplicate_text": 0.0138,
+   "cross_token_overlap": 0.008,
+   "percentiles": {
+    "creator_concentration": 0.645,
+    "duplicate_text": 0.63,
+    "cross_token_overlap": 0.375
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "internet-computer": {
+   "posts": 118,
+   "creator_concentration": 0.6691,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.1323,
+   "percentiles": {
+    "creator_concentration": 0.675,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.625
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "iota": {
+   "posts": 100,
+   "creator_concentration": 0.3977,
+   "duplicate_text": 0.0899,
+   "cross_token_overlap": 0.5675,
+   "percentiles": {
+    "creator_concentration": 0.265,
+    "duplicate_text": 0.92,
+    "cross_token_overlap": 0.845
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "jaaa": {
+   "posts": 145,
+   "creator_concentration": 0.8499,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0004,
+   "percentiles": {
+    "creator_concentration": 0.85,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.19
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "jasmycoin": {
+   "posts": 105,
+   "creator_concentration": 0.6386,
+   "duplicate_text": 0.0971,
+   "cross_token_overlap": 0.7893,
+   "percentiles": {
+    "creator_concentration": 0.64,
+    "duplicate_text": 0.935,
+    "cross_token_overlap": 0.955
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "jpyc": {
+   "posts": 110,
+   "creator_concentration": 0.6987,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.052,
+   "percentiles": {
+    "creator_concentration": 0.71,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.55
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "jto": {
+   "posts": 200,
+   "creator_concentration": 0.771,
+   "duplicate_text": 0.0156,
+   "cross_token_overlap": 0.044,
+   "percentiles": {
+    "creator_concentration": 0.785,
+    "duplicate_text": 0.66,
+    "cross_token_overlap": 0.54
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "jtrsy": {
+   "posts": 46,
+   "creator_concentration": 0.6753,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.1142,
+   "percentiles": {
+    "creator_concentration": 0.69,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.6
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "jup": {
+   "posts": 208,
+   "creator_concentration": 0.44,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0374,
+   "percentiles": {
+    "creator_concentration": 0.355,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.515
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "just": {
+   "posts": 499,
+   "creator_concentration": 0.294,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0125,
+   "percentiles": {
+    "creator_concentration": 0.155,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.415
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "kag": {
+   "posts": 334,
+   "creator_concentration": 0.2678,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0209,
+   "percentiles": {
+    "creator_concentration": 0.12,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.45
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "kamino": {
+   "posts": 155,
+   "creator_concentration": 0.6256,
+   "duplicate_text": 0.0331,
+   "cross_token_overlap": 0.009,
+   "percentiles": {
+    "creator_concentration": 0.62,
+    "duplicate_text": 0.795,
+    "cross_token_overlap": 0.385
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "kaspa": {
+   "posts": 189,
+   "creator_concentration": 0.4353,
+   "duplicate_text": 0.0214,
+   "cross_token_overlap": 0.3396,
+   "percentiles": {
+    "creator_concentration": 0.34,
+    "duplicate_text": 0.69,
+    "cross_token_overlap": 0.76
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "kau": {
+   "posts": 336,
+   "creator_concentration": 0.2253,
+   "duplicate_text": 0.018,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.075,
+    "duplicate_text": 0.67,
+    "cross_token_overlap": 0.0
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "kcs": {
+   "posts": 314,
+   "creator_concentration": 0.3136,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0001,
+   "percentiles": {
+    "creator_concentration": 0.185,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.125
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "kite": {
+   "posts": 454,
+   "creator_concentration": 0.2015,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0228,
+   "percentiles": {
+    "creator_concentration": 0.065,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.475
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "layerzero": {
+   "posts": 114,
+   "creator_concentration": 0.2996,
+   "duplicate_text": 0.0273,
+   "cross_token_overlap": 0.3062,
+   "percentiles": {
+    "creator_concentration": 0.16,
+    "duplicate_text": 0.745,
+    "cross_token_overlap": 0.73
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "leo": {
+   "posts": 500,
+   "creator_concentration": 0.3392,
+   "duplicate_text": 0.0222,
+   "cross_token_overlap": 0.0052,
+   "percentiles": {
+    "creator_concentration": 0.21,
+    "duplicate_text": 0.695,
+    "cross_token_overlap": 0.32
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "lido-dao": {
+   "posts": 28,
+   "creator_concentration": 0.8118,
+   "duplicate_text": 0.1429,
+   "cross_token_overlap": 0.9179,
+   "percentiles": {
+    "creator_concentration": 0.82,
+    "duplicate_text": 0.97,
+    "cross_token_overlap": 0.995
+   },
+   "band": "all three signals elevated",
+   "flags": 3
+  },
+  "lighter": {
+   "posts": 104,
+   "creator_concentration": 0.3152,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.3991,
+   "percentiles": {
+    "creator_concentration": 0.19,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.8
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "litecoin": {
+   "posts": 156,
+   "creator_concentration": 0.6228,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.4219,
+   "percentiles": {
+    "creator_concentration": 0.61,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.81
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "mana": {
+   "posts": 500,
+   "creator_concentration": 0.2266,
+   "duplicate_text": 0.0101,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.08,
+    "duplicate_text": 0.555,
+    "cross_token_overlap": 0.0
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "memecore": {
+   "posts": 209,
+   "creator_concentration": 0.8714,
+   "duplicate_text": 0.0431,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.87,
+    "duplicate_text": 0.84,
+    "cross_token_overlap": 0.0
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "meta": {
+   "posts": 489,
+   "creator_concentration": 0.2605,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0001,
+   "percentiles": {
+    "creator_concentration": 0.115,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.125
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "meteora": {
+   "posts": 103,
+   "creator_concentration": 0.6015,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.2777,
+   "percentiles": {
+    "creator_concentration": 0.58,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.69
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "mina": {
+   "posts": 500,
+   "creator_concentration": 0.1824,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.035,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.0
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "mnt": {
+   "posts": 267,
+   "creator_concentration": 0.4218,
+   "duplicate_text": 0.0115,
+   "cross_token_overlap": 0.0002,
+   "percentiles": {
+    "creator_concentration": 0.32,
+    "duplicate_text": 0.585,
+    "cross_token_overlap": 0.16
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "monad": {
+   "posts": 160,
+   "creator_concentration": 0.3413,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0611,
+   "percentiles": {
+    "creator_concentration": 0.215,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.56
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "monero": {
+   "posts": 100,
+   "creator_concentration": 0.3992,
+   "duplicate_text": 0.0303,
+   "cross_token_overlap": 0.3138,
+   "percentiles": {
+    "creator_concentration": 0.275,
+    "duplicate_text": 0.765,
+    "cross_token_overlap": 0.735
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "morpho": {
+   "posts": 44,
+   "creator_concentration": 0.477,
+   "duplicate_text": 0.0698,
+   "cross_token_overlap": 0.6074,
+   "percentiles": {
+    "creator_concentration": 0.435,
+    "duplicate_text": 0.89,
+    "cross_token_overlap": 0.86
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "mx": {
+   "posts": 500,
+   "creator_concentration": 0.2071,
+   "duplicate_text": 0.0141,
+   "cross_token_overlap": 0.0001,
+   "percentiles": {
+    "creator_concentration": 0.07,
+    "duplicate_text": 0.645,
+    "cross_token_overlap": 0.125
    },
    "band": "nothing unusual",
    "flags": 0
   },
   "near": {
    "posts": 500,
-   "creator_concentration": 0.2387,
-   "duplicate_text": 0.0281,
-   "cross_token_overlap": 0.0002,
+   "creator_concentration": 0.2307,
+   "duplicate_text": 0.0261,
+   "cross_token_overlap": 0.0396,
    "percentiles": {
-    "creator_concentration": 0.1,
-    "duplicate_text": 0.533,
-    "cross_token_overlap": 0.1
+    "creator_concentration": 0.085,
+    "duplicate_text": 0.73,
+    "cross_token_overlap": 0.53
    },
    "band": "nothing unusual",
    "flags": 0
   },
-  "optimism": {
-   "posts": 70,
-   "creator_concentration": 0.6898,
-   "duplicate_text": 0.0435,
-   "cross_token_overlap": 0.2059,
+  "neo": {
+   "posts": 447,
+   "creator_concentration": 0.413,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.2895,
    "percentiles": {
-    "creator_concentration": 0.9,
-    "duplicate_text": 0.733,
-    "cross_token_overlap": 0.667
+    "creator_concentration": 0.31,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.705
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "nft": {
+   "posts": 306,
+   "creator_concentration": 0.7116,
+   "duplicate_text": 0.0132,
+   "cross_token_overlap": 0.0092,
+   "percentiles": {
+    "creator_concentration": 0.73,
+    "duplicate_text": 0.615,
+    "cross_token_overlap": 0.39
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "night": {
+   "posts": 500,
+   "creator_concentration": 0.2822,
+   "duplicate_text": 0.0122,
+   "cross_token_overlap": 0.0266,
+   "percentiles": {
+    "creator_concentration": 0.14,
+    "duplicate_text": 0.61,
+    "cross_token_overlap": 0.49
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "npc": {
+   "posts": 464,
+   "creator_concentration": 0.4547,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.375,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.0
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "official-trump": {
+   "posts": 119,
+   "creator_concentration": 0.5941,
+   "duplicate_text": 0.2941,
+   "cross_token_overlap": 0.0862,
+   "percentiles": {
+    "creator_concentration": 0.57,
+    "duplicate_text": 0.995,
+    "cross_token_overlap": 0.575
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "okb": {
+   "posts": 239,
+   "creator_concentration": 0.3758,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0002,
+   "percentiles": {
+    "creator_concentration": 0.24,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.16
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "olympus": {
+   "posts": 324,
+   "creator_concentration": 0.4639,
+   "duplicate_text": 0.025,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.42,
+    "duplicate_text": 0.715,
+    "cross_token_overlap": 0.0
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "ondo-finance": {
+   "posts": 185,
+   "creator_concentration": 0.7345,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.202,
+   "percentiles": {
+    "creator_concentration": 0.76,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.67
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "open-usd": {
+   "posts": 183,
+   "creator_concentration": 0.4998,
+   "duplicate_text": 0.071,
+   "cross_token_overlap": 0.3277,
+   "percentiles": {
+    "creator_concentration": 0.47,
+    "duplicate_text": 0.895,
+    "cross_token_overlap": 0.75
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "optimism": {
+   "posts": 69,
+   "creator_concentration": 0.5477,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.618,
+   "percentiles": {
+    "creator_concentration": 0.505,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.875
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "origintrail": {
+   "posts": 52,
+   "creator_concentration": 0.9132,
+   "duplicate_text": 0.08,
+   "cross_token_overlap": 0.6361,
+   "percentiles": {
+    "creator_concentration": 0.905,
+    "duplicate_text": 0.905,
+    "cross_token_overlap": 0.88
+   },
+   "band": "all three signals elevated",
+   "flags": 3
+  },
+  "paxg": {
+   "posts": 166,
+   "creator_concentration": 0.927,
+   "duplicate_text": 0.0667,
+   "cross_token_overlap": 0.0079,
+   "percentiles": {
+    "creator_concentration": 0.935,
+    "duplicate_text": 0.885,
+    "cross_token_overlap": 0.37
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "pendle": {
+   "posts": 48,
+   "creator_concentration": 0.4096,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.4866,
+   "percentiles": {
+    "creator_concentration": 0.3,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.825
    },
    "band": "one signal elevated",
    "flags": 1
   },
   "pepe": {
    "posts": 116,
-   "creator_concentration": 0.3523,
-   "duplicate_text": 0.0811,
-   "cross_token_overlap": 0.6719,
+   "creator_concentration": 0.3627,
+   "duplicate_text": 0.0357,
+   "cross_token_overlap": 0.7944,
    "percentiles": {
-    "creator_concentration": 0.167,
-    "duplicate_text": 0.867,
-    "cross_token_overlap": 0.967
+    "creator_concentration": 0.225,
+    "duplicate_text": 0.815,
+    "cross_token_overlap": 0.965
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "pi-network": {
+   "posts": 310,
+   "creator_concentration": 0.6865,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0034,
+   "percentiles": {
+    "creator_concentration": 0.695,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.29
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "plasma": {
+   "posts": 96,
+   "creator_concentration": 0.4866,
+   "duplicate_text": 0.0349,
+   "cross_token_overlap": 0.4002,
+   "percentiles": {
+    "creator_concentration": 0.445,
+    "duplicate_text": 0.81,
+    "cross_token_overlap": 0.805
    },
    "band": "two signals elevated",
    "flags": 2
   },
   "polkadot": {
    "posts": 100,
-   "creator_concentration": 0.5493,
-   "duplicate_text": 0.0707,
-   "cross_token_overlap": 0.4655,
+   "creator_concentration": 0.5624,
+   "duplicate_text": 0.0612,
+   "cross_token_overlap": 0.8542,
    "percentiles": {
-    "creator_concentration": 0.6,
-    "duplicate_text": 0.833,
-    "cross_token_overlap": 0.8
+    "creator_concentration": 0.515,
+    "duplicate_text": 0.875,
+    "cross_token_overlap": 0.985
    },
    "band": "two signals elevated",
    "flags": 2
   },
-  "polygon": {
-   "posts": 328,
-   "creator_concentration": 0.2067,
+  "polygon-ecosystem-token": {
+   "posts": 65,
+   "creator_concentration": 0.5778,
    "duplicate_text": 0.0,
-   "cross_token_overlap": 0.0009,
+   "cross_token_overlap": 0.8524,
    "percentiles": {
-    "creator_concentration": 0.067,
+    "creator_concentration": 0.545,
     "duplicate_text": 0.0,
-    "cross_token_overlap": 0.2
+    "cross_token_overlap": 0.98
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "pons": {
+   "posts": 105,
+   "creator_concentration": 0.3942,
+   "duplicate_text": 0.0381,
+   "cross_token_overlap": 0.2873,
+   "percentiles": {
+    "creator_concentration": 0.26,
+    "duplicate_text": 0.82,
+    "cross_token_overlap": 0.7
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "prl": {
+   "posts": 318,
+   "creator_concentration": 0.3175,
+   "duplicate_text": 0.0252,
+   "cross_token_overlap": 0.0002,
+   "percentiles": {
+    "creator_concentration": 0.195,
+    "duplicate_text": 0.72,
+    "cross_token_overlap": 0.16
    },
    "band": "nothing unusual",
    "flags": 0
   },
-  "render": {
-   "posts": 450,
-   "creator_concentration": 0.4909,
+  "pudgy-penguins": {
+   "posts": 134,
+   "creator_concentration": 0.9581,
    "duplicate_text": 0.0,
-   "cross_token_overlap": 0.0,
+   "cross_token_overlap": 0.0059,
    "percentiles": {
-    "creator_concentration": 0.5,
+    "creator_concentration": 0.96,
     "duplicate_text": 0.0,
-    "cross_token_overlap": 0.0
+    "cross_token_overlap": 0.34
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "pump-fun": {
+   "posts": 233,
+   "creator_concentration": 0.9826,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0012,
+   "percentiles": {
+    "creator_concentration": 0.975,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.24
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "pyth-network": {
+   "posts": 56,
+   "creator_concentration": 0.6097,
+   "duplicate_text": 0.0536,
+   "cross_token_overlap": 0.682,
+   "percentiles": {
+    "creator_concentration": 0.585,
+    "duplicate_text": 0.855,
+    "cross_token_overlap": 0.9
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "quant-network": {
+   "posts": 174,
+   "creator_concentration": 0.2533,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.3889,
+   "percentiles": {
+    "creator_concentration": 0.11,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.795
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "rail": {
+   "posts": 500,
+   "creator_concentration": 0.1684,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0069,
+   "percentiles": {
+    "creator_concentration": 0.02,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.35
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "rain": {
+   "posts": 500,
+   "creator_concentration": 0.2459,
+   "duplicate_text": 0.0061,
+   "cross_token_overlap": 0.0071,
+   "percentiles": {
+    "creator_concentration": 0.09,
+    "duplicate_text": 0.53,
+    "cross_token_overlap": 0.355
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "raydium": {
+   "posts": 106,
+   "creator_concentration": 0.7002,
+   "duplicate_text": 0.0594,
+   "cross_token_overlap": 0.8373,
+   "percentiles": {
+    "creator_concentration": 0.72,
+    "duplicate_text": 0.865,
+    "cross_token_overlap": 0.975
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "render": {
+   "posts": 442,
+   "creator_concentration": 0.4813,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0212,
+   "percentiles": {
+    "creator_concentration": 0.44,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.455
    },
    "band": "nothing unusual",
    "flags": 0
   },
   "ripple": {
    "posts": 300,
-   "creator_concentration": 0.6642,
-   "duplicate_text": 0.01,
-   "cross_token_overlap": 0.0529,
+   "creator_concentration": 0.6539,
+   "duplicate_text": 0.0133,
+   "cross_token_overlap": 0.6861,
    "percentiles": {
-    "creator_concentration": 0.833,
-    "duplicate_text": 0.333,
-    "cross_token_overlap": 0.4
+    "creator_concentration": 0.65,
+    "duplicate_text": 0.62,
+    "cross_token_overlap": 0.905
    },
    "band": "one signal elevated",
    "flags": 1
   },
-  "sei": {
-   "posts": 445,
-   "creator_concentration": 0.2051,
+  "safepal": {
+   "posts": 65,
+   "creator_concentration": 0.568,
+   "duplicate_text": 0.0508,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.535,
+    "duplicate_text": 0.85,
+    "cross_token_overlap": 0.0
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "safo": {
+   "posts": 192,
+   "creator_concentration": 0.4403,
+   "duplicate_text": 0.0314,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.365,
+    "duplicate_text": 0.79,
+    "cross_token_overlap": 0.0
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "seeker": {
+   "posts": 405,
+   "creator_concentration": 0.6005,
    "duplicate_text": 0.0,
    "cross_token_overlap": 0.0,
    "percentiles": {
-    "creator_concentration": 0.033,
+    "creator_concentration": 0.575,
     "duplicate_text": 0.0,
     "cross_token_overlap": 0.0
    },
    "band": "nothing unusual",
    "flags": 0
   },
-  "shiba-inu": {
-   "posts": 113,
-   "creator_concentration": 0.4383,
+  "sei-network": {
+   "posts": 101,
+   "creator_concentration": 0.3632,
    "duplicate_text": 0.0,
-   "cross_token_overlap": 0.2172,
+   "cross_token_overlap": 0.8071,
    "percentiles": {
-    "creator_concentration": 0.4,
+    "creator_concentration": 0.23,
     "duplicate_text": 0.0,
-    "cross_token_overlap": 0.7
+    "cross_token_overlap": 0.97
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "sent": {
+   "posts": 499,
+   "creator_concentration": 0.1281,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0162,
+   "percentiles": {
+    "creator_concentration": 0.0,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.43
    },
    "band": "nothing unusual",
    "flags": 0
   },
-  "solana": {
-   "posts": 321,
-   "creator_concentration": 0.4303,
-   "duplicate_text": 0.0127,
-   "cross_token_overlap": 0.0255,
+  "shfl": {
+   "posts": 51,
+   "creator_concentration": 0.9317,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0048,
    "percentiles": {
-    "creator_concentration": 0.367,
-    "duplicate_text": 0.367,
-    "cross_token_overlap": 0.3
+    "creator_concentration": 0.945,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.31
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "shiba-inu": {
+   "posts": 113,
+   "creator_concentration": 0.4387,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.3753,
+   "percentiles": {
+    "creator_concentration": 0.345,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.785
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "sky": {
+   "posts": 500,
+   "creator_concentration": 0.1501,
+   "duplicate_text": 0.0182,
+   "cross_token_overlap": 0.0325,
+   "percentiles": {
+    "creator_concentration": 0.005,
+    "duplicate_text": 0.675,
+    "cross_token_overlap": 0.5
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "sn51": {
+   "posts": 26,
+   "creator_concentration": 0.7866,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.795,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.0
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "sn64": {
+   "posts": 38,
+   "creator_concentration": 0.8772,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0247,
+   "percentiles": {
+    "creator_concentration": 0.885,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.48
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "snx": {
+   "posts": 295,
+   "creator_concentration": 0.8396,
+   "duplicate_text": 0.0106,
+   "cross_token_overlap": 0.0035,
+   "percentiles": {
+    "creator_concentration": 0.845,
+    "duplicate_text": 0.565,
+    "cross_token_overlap": 0.295
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "solana": {
+   "posts": 322,
+   "creator_concentration": 0.3015,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.1143,
+   "percentiles": {
+    "creator_concentration": 0.165,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.605
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "sonic-3": {
+   "posts": 274,
+   "creator_concentration": 0.6543,
+   "duplicate_text": 0.0109,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.655,
+    "duplicate_text": 0.57,
+    "cross_token_overlap": 0.0
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "spx6900": {
+   "posts": 118,
+   "creator_concentration": 0.9656,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0058,
+   "percentiles": {
+    "creator_concentration": 0.965,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.335
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "stable": {
+   "posts": 500,
+   "creator_concentration": 0.1729,
+   "duplicate_text": 0.008,
+   "cross_token_overlap": 0.0141,
+   "percentiles": {
+    "creator_concentration": 0.03,
+    "duplicate_text": 0.535,
+    "cross_token_overlap": 0.42
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "starknet": {
+   "posts": 117,
+   "creator_concentration": 0.2774,
+   "duplicate_text": 0.0261,
+   "cross_token_overlap": 0.3027,
+   "percentiles": {
+    "creator_concentration": 0.13,
+    "duplicate_text": 0.73,
+    "cross_token_overlap": 0.72
    },
    "band": "nothing unusual",
    "flags": 0
   },
   "stellar": {
-   "posts": 103,
-   "creator_concentration": 0.5572,
-   "duplicate_text": 0.1275,
-   "cross_token_overlap": 0.6635,
+   "posts": 104,
+   "creator_concentration": 0.4579,
+   "duplicate_text": 0.1456,
+   "cross_token_overlap": 0.7205,
    "percentiles": {
-    "creator_concentration": 0.633,
-    "duplicate_text": 0.9,
-    "cross_token_overlap": 0.933
+    "creator_concentration": 0.4,
+    "duplicate_text": 0.975,
+    "cross_token_overlap": 0.915
    },
    "band": "two signals elevated",
    "flags": 2
   },
+  "stonk": {
+   "posts": 251,
+   "creator_concentration": 0.3985,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.5267,
+   "percentiles": {
+    "creator_concentration": 0.27,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.835
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "strcx": {
+   "posts": 36,
+   "creator_concentration": 0.926,
+   "duplicate_text": 0.1111,
+   "cross_token_overlap": 0.7673,
+   "percentiles": {
+    "creator_concentration": 0.93,
+    "duplicate_text": 0.945,
+    "cross_token_overlap": 0.935
+   },
+   "band": "all three signals elevated",
+   "flags": 3
+  },
+  "stronghold-token": {
+   "posts": 101,
+   "creator_concentration": 0.3805,
+   "duplicate_text": 0.0891,
+   "cross_token_overlap": 0.022,
+   "percentiles": {
+    "creator_concentration": 0.245,
+    "duplicate_text": 0.915,
+    "cross_token_overlap": 0.46
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "stx": {
+   "posts": 327,
+   "creator_concentration": 0.8717,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0022,
+   "percentiles": {
+    "creator_concentration": 0.875,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.28
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
   "sui": {
-   "posts": 375,
-   "creator_concentration": 0.4104,
+   "posts": 372,
+   "creator_concentration": 0.4124,
    "duplicate_text": 0.0197,
    "cross_token_overlap": 0.0002,
    "percentiles": {
-    "creator_concentration": 0.333,
-    "duplicate_text": 0.5,
-    "cross_token_overlap": 0.1
+    "creator_concentration": 0.305,
+    "duplicate_text": 0.68,
+    "cross_token_overlap": 0.16
    },
    "band": "nothing unusual",
    "flags": 0
+  },
+  "sun": {
+   "posts": 500,
+   "creator_concentration": 0.1883,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.1381,
+   "percentiles": {
+    "creator_concentration": 0.05,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.63
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "super": {
+   "posts": 500,
+   "creator_concentration": 0.1588,
+   "duplicate_text": 0.012,
+   "cross_token_overlap": 0.0181,
+   "percentiles": {
+    "creator_concentration": 0.01,
+    "duplicate_text": 0.6,
+    "cross_token_overlap": 0.445
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "syrup": {
+   "posts": 57,
+   "creator_concentration": 0.4906,
+   "duplicate_text": 0.1346,
+   "cross_token_overlap": 0.662,
+   "percentiles": {
+    "creator_concentration": 0.455,
+    "duplicate_text": 0.96,
+    "cross_token_overlap": 0.885
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "terra-luna": {
+   "posts": 242,
+   "creator_concentration": 0.6596,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0124,
+   "percentiles": {
+    "creator_concentration": 0.66,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.41
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "tezos": {
+   "posts": 106,
+   "creator_concentration": 0.927,
+   "duplicate_text": 0.0286,
+   "cross_token_overlap": 0.0286,
+   "percentiles": {
+    "creator_concentration": 0.935,
+    "duplicate_text": 0.75,
+    "cross_token_overlap": 0.495
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "the-graph": {
+   "posts": 44,
+   "creator_concentration": 0.4576,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.49,
+   "percentiles": {
+    "creator_concentration": 0.395,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.83
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "the-sandbox": {
+   "posts": 233,
+   "creator_concentration": 0.8179,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.001,
+   "percentiles": {
+    "creator_concentration": 0.825,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.22
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "theta": {
+   "posts": 356,
+   "creator_concentration": 0.4493,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0013,
+   "percentiles": {
+    "creator_concentration": 0.37,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.245
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "thorchain": {
+   "posts": 31,
+   "creator_concentration": 0.6221,
+   "duplicate_text": 0.0968,
+   "cross_token_overlap": 0.125,
+   "percentiles": {
+    "creator_concentration": 0.605,
+    "duplicate_text": 0.93,
+    "cross_token_overlap": 0.615
+   },
+   "band": "one signal elevated",
+   "flags": 1
   },
   "tron": {
    "posts": 100,
-   "creator_concentration": 0.3615,
+   "creator_concentration": 0.3683,
    "duplicate_text": 0.0,
-   "cross_token_overlap": 0.1836,
+   "cross_token_overlap": 0.2686,
    "percentiles": {
-    "creator_concentration": 0.2,
+    "creator_concentration": 0.235,
     "duplicate_text": 0.0,
-    "cross_token_overlap": 0.633
+    "cross_token_overlap": 0.685
    },
    "band": "nothing unusual",
    "flags": 0
   },
-  "uniswap": {
-   "posts": 148,
-   "creator_concentration": 0.4559,
-   "duplicate_text": 0.0405,
-   "cross_token_overlap": 0.0398,
+  "twt": {
+   "posts": 403,
+   "creator_concentration": 0.949,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0,
    "percentiles": {
-    "creator_concentration": 0.467,
-    "duplicate_text": 0.7,
-    "cross_token_overlap": 0.333
+    "creator_concentration": 0.95,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.0
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "u": {
+   "posts": 499,
+   "creator_concentration": 0.4891,
+   "duplicate_text": 0.0141,
+   "cross_token_overlap": 0.1179,
+   "percentiles": {
+    "creator_concentration": 0.45,
+    "duplicate_text": 0.645,
+    "cross_token_overlap": 0.61
    },
    "band": "nothing unusual",
    "flags": 0
+  },
+  "ub": {
+   "posts": 406,
+   "creator_concentration": 0.5517,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.3397,
+   "percentiles": {
+    "creator_concentration": 0.51,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.765
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "uniswap": {
+   "posts": 149,
+   "creator_concentration": 0.4152,
+   "duplicate_text": 0.0604,
+   "cross_token_overlap": 0.3029,
+   "percentiles": {
+    "creator_concentration": 0.315,
+    "duplicate_text": 0.87,
+    "cross_token_overlap": 0.725
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "usat": {
+   "posts": 120,
+   "creator_concentration": 0.9221,
+   "duplicate_text": 0.0336,
+   "cross_token_overlap": 0.0006,
+   "percentiles": {
+    "creator_concentration": 0.92,
+    "duplicate_text": 0.805,
+    "cross_token_overlap": 0.205
+   },
+   "band": "two signals elevated",
+   "flags": 2
+  },
+  "useless": {
+   "posts": 65,
+   "creator_concentration": 0.6276,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0178,
+   "percentiles": {
+    "creator_concentration": 0.625,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.44
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "usx": {
+   "posts": 91,
+   "creator_concentration": 0.7208,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.74,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.0
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "vechain": {
+   "posts": 135,
+   "creator_concentration": 0.9954,
+   "duplicate_text": 0.0226,
+   "cross_token_overlap": 0.0019,
+   "percentiles": {
+    "creator_concentration": 0.99,
+    "duplicate_text": 0.705,
+    "cross_token_overlap": 0.27
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "venice-token": {
+   "posts": 100,
+   "creator_concentration": 0.4066,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.1836,
+   "percentiles": {
+    "creator_concentration": 0.29,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.66
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "virtual": {
+   "posts": 500,
+   "creator_concentration": 0.7215,
+   "duplicate_text": 0.0301,
+   "cross_token_overlap": 0.0018,
+   "percentiles": {
+    "creator_concentration": 0.745,
+    "duplicate_text": 0.76,
+    "cross_token_overlap": 0.26
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "vision-3": {
+   "posts": 25,
+   "creator_concentration": 0.808,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.81,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.0
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "whitebit": {
+   "posts": 26,
+   "creator_concentration": 0.8922,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0256,
+   "percentiles": {
+    "creator_concentration": 0.9,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.485
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "wif": {
+   "posts": 254,
+   "creator_concentration": 0.6711,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0076,
+   "percentiles": {
+    "creator_concentration": 0.68,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.365
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "world-liberty-financial": {
+   "posts": 92,
+   "creator_concentration": 0.6158,
+   "duplicate_text": 0.0652,
+   "cross_token_overlap": 0.0865,
+   "percentiles": {
+    "creator_concentration": 0.595,
+    "duplicate_text": 0.88,
+    "cross_token_overlap": 0.58
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "worldcoin-wld": {
+   "posts": 44,
+   "creator_concentration": 0.8559,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0486,
+   "percentiles": {
+    "creator_concentration": 0.86,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.545
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "xaut": {
+   "posts": 182,
+   "creator_concentration": 0.6248,
+   "duplicate_text": 0.0331,
+   "cross_token_overlap": 0.0807,
+   "percentiles": {
+    "creator_concentration": 0.615,
+    "duplicate_text": 0.795,
+    "cross_token_overlap": 0.57
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "xdc": {
+   "posts": 302,
+   "creator_concentration": 0.3343,
+   "duplicate_text": 0.0135,
+   "cross_token_overlap": 0.0904,
+   "percentiles": {
+    "creator_concentration": 0.205,
+    "duplicate_text": 0.625,
+    "cross_token_overlap": 0.59
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "xec": {
+   "posts": 138,
+   "creator_concentration": 0.6332,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.0013,
+   "percentiles": {
+    "creator_concentration": 0.635,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.245
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "zama": {
+   "posts": 100,
+   "creator_concentration": 0.5798,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.3524,
+   "percentiles": {
+    "creator_concentration": 0.55,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.78
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "zcash": {
+   "posts": 227,
+   "creator_concentration": 0.2887,
+   "duplicate_text": 0.0,
+   "cross_token_overlap": 0.5721,
+   "percentiles": {
+    "creator_concentration": 0.15,
+    "duplicate_text": 0.0,
+    "cross_token_overlap": 0.85
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "zebec-network": {
+   "posts": 126,
+   "creator_concentration": 0.3127,
+   "duplicate_text": 0.0248,
+   "cross_token_overlap": 0.3371,
+   "percentiles": {
+    "creator_concentration": 0.18,
+    "duplicate_text": 0.71,
+    "cross_token_overlap": 0.755
+   },
+   "band": "one signal elevated",
+   "flags": 1
+  },
+  "zen": {
+   "posts": 381,
+   "creator_concentration": 0.2723,
+   "duplicate_text": 0.0161,
+   "cross_token_overlap": 0.0,
+   "percentiles": {
+    "creator_concentration": 0.125,
+    "duplicate_text": 0.665,
+    "cross_token_overlap": 0.0
+   },
+   "band": "nothing unusual",
+   "flags": 0
+  },
+  "zksync": {
+   "posts": 104,
+   "creator_concentration": 0.7896,
+   "duplicate_text": 0.0297,
+   "cross_token_overlap": 0.0432,
+   "percentiles": {
+    "creator_concentration": 0.8,
+    "duplicate_text": 0.755,
+    "cross_token_overlap": 0.535
+   },
+   "band": "two signals elevated",
+   "flags": 2
   }
  }
 }
