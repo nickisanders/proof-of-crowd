@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free scan · Proof of Crowd</title>
+<meta name="description" content="Check any token's conversation against three measured signals: how few accounts carry it, how much of the wording repeats across accounts, and how many of those accounts work several tokens at once.">
+<link rel="canonical" href="https://proofofcrowd.com/scan.html">
+<meta property="og:title" content="Free scan · Proof of Crowd">
+<meta property="og:description" content="Three measured signals on any token's conversation, ranked against every other token scanned.">
+<meta property="og:image" content="https://proofofcrowd.com/assets/og.png">
+<meta property="og:url" content="https://proofofcrowd.com/scan.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+
+<nav>
+  <a class="brand" href="./"><svg class="brandmark" viewBox="0 0 64 64" width="30" height="30" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="22.60" cy="39.42" r="3.0" fill="#1b3a6b"/><circle cx="23.81" cy="30.26" r="3.0" fill="#1b3a6b"/><circle cx="32.00" cy="26.00" r="3.0" fill="#1b3a6b"/><circle cx="40.19" cy="30.26" r="3.0" fill="#1b3a6b"/><circle cx="41.40" cy="39.42" r="3.0" fill="#1b3a6b"/><circle cx="14.15" cy="42.50" r="3.0" fill="#1b3a6b"/><circle cx="13.16" cy="33.52" r="3.0" fill="#1b3a6b"/><circle cx="16.44" cy="25.10" r="3.0" fill="#1b3a6b"/><circle cx="23.23" cy="19.15" r="3.0" fill="#1b3a6b"/><circle cx="32.00" cy="17.00" r="3.0" fill="#1b3a6b"/><circle cx="40.77" cy="19.15" r="3.0" fill="#1b3a6b"/><circle cx="47.56" cy="25.10" r="3.0" fill="#1b3a6b"/><circle cx="50.84" cy="33.52" r="3.0" fill="#1b3a6b"/><circle cx="49.85" cy="42.50" r="3.0" fill="#1b3a6b"/><circle cx="5.69" cy="45.58" r="3.0" fill="#1b3a6b"/><circle cx="4.01" cy="36.81" r="3.0" fill="#1b3a6b"/><circle cx="5.18" cy="27.97" r="3.0" fill="#1b3a6b"/><circle cx="9.06" cy="19.94" r="3.0" fill="#1b3a6b"/><circle cx="15.28" cy="13.54" r="3.0" fill="#1b3a6b"/><circle cx="23.19" cy="9.42" r="3.0" fill="#1b3a6b"/><circle cx="32.00" cy="8.00" r="3.0" fill="#1b3a6b"/><circle cx="40.81" cy="9.42" r="3.0" fill="#1b3a6b"/><circle cx="48.72" cy="13.54" r="3.0" fill="#1b3a6b"/><circle cx="54.94" cy="19.94" r="3.0" fill="#1b3a6b"/><circle cx="58.82" cy="27.97" r="3.0" fill="#1b3a6b"/><circle cx="59.99" cy="36.81" r="3.0" fill="#1b3a6b"/><circle cx="58.31" cy="45.58" r="3.0" fill="#1b3a6b"/><circle cx="32" cy="36" r="3.4" fill="#1b3a6b"/></svg><span class="brandtext">Proof of <span>Crowd</span></span></a>
+  <a class="link" href="./#pricing">Audits</a>
+  <a class="link" href="sample.html">Sample report</a>
+  <span class="spacer"></span>
+  <a class="navcta" href="./#contact">Request an audit</a>
+</nav>
+
+<header class="hero" style="padding-bottom:28px">
+  <div class="kicker">Free scan</div>
+  <h1>Who is actually <span class="accent">talking?</span></h1>
+  <p class="lede">Three measured signals on a token's conversation, each ranked against every other token scanned. No sign-up, no email.</p>
+
+  <div class="scanbox">
+    <input id="q" type="search" list="tokens" autocomplete="off" spellcheck="false"
+           placeholder="Type a token, e.g. pepe" aria-label="Token to scan">
+    <datalist id="tokens"></datalist>
+  </div>
+  <p class="sub" id="meta" style="font-size:14px;margin-top:10px"></p>
+</header>
+
+<section id="result" style="border-top:none;padding-top:0" hidden></section>
+
+<section>
+  <h2>What this does and does not tell you</h2>
+  <p>Each signal is a measurement, and the percentile is a rank against the other tokens scanned rather than a threshold invented here. A token in the 90th percentile is being compared with real peers, not with an idea of what normal looks like.</p>
+  <p>None of it says who is behind anything. Repeated wording across accounts is consistent with a paid campaign, an airdrop task, a quote-tweet chain, or a community handed a template, and this will not tell you which.</p>
+  <p>The larger thing it cannot see is whether any of the attention produced buyers. That needs onchain work, which takes hours per token and is part of a <a href="./#pricing">paid audit</a>.</p>
+  <p style="margin-top:18px"><a class="cta" href="./#contact">Get the full audit on your token</a></p>
+</section>
+
+<footer>
+  <p>Independent analysis. Not financial advice.</p>
+  <p>Social data from LunarCrush. Methodology is published in full.</p>
+</footer>
+
+</div>
+<script src="assets/scan.js" defer></script>
+</body>
+</html>
