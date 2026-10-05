@@ -1,7 +1,14 @@
-/* Free scan. Reads a static JSON the pipeline publishes, so the site stays on
-   GitHub Pages with no backend and the API key never reaches a browser.
-   A token the population does not cover is the most valuable case here: it is
-   someone naming the token they care about, so it asks rather than apologises. */
+/* Free scan.
+
+   Two sources, deliberately. The static JSON is the floor: it is published with
+   the site, costs nothing, and keeps the page working whether or not a server
+   is up. The API is the ceiling: it scans a token nobody pre-scanned, which is
+   the token a buyer actually types.
+
+   The static file is always loaded first so the page is usable immediately, and
+   the API is only called for a token the population does not already cover. If
+   the API is down, unreachable or not deployed, the page silently degrades to
+   what it did before, which is why SCAN_API can be left empty. */
 (function () {
   "use strict";
 
@@ -23,6 +30,9 @@
      "Share of interactions from accounts posting in three or more other tokens"]
   ];
 
+  // Empty disables live scanning and the page runs on the static file alone.
+  var SCAN_API = "";   // set to e.g. "https://api.proofofcrowd.com" once deployed
+
   var el = function (id) { return document.getElementById(id); };
   var pct = function (v) { return v === null || v === undefined ? "n/a" : (v * 100).toFixed(1) + "%"; };
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) {
@@ -35,17 +45,32 @@
     return ALIAS[k] || k;
   }
 
-  function render(topic) {
+  function notice(title, body, cta) {
+    return '<div class="card"><h3>' + title + '</h3><p>' + body + '</p>' +
+      (cta ? '<p style="margin-top:14px"><a class="cta" href="./#contact">' + cta + '</a></p>' : '') +
+      '</div>';
+  }
+
+  function render(topic, live) {
     var out = el("result");
-    var t = data.tokens[topic];
+    var t = live || data.tokens[topic];
     out.hidden = false;
 
+    if (t && t.insufficient) {
+      out.innerHTML = notice("Not enough conversation to judge", esc(t.message),
+        "Ask for a full audit");
+      return;
+    }
     if (!t) {
-      out.innerHTML =
-        '<div class="card"><h3>Not scanned yet</h3>' +
-        '<p>Nothing on <strong>' + esc(topic) + '</strong> in this run. The population is ' +
-        data.population + ' tokens and grows with each one requested.</p>' +
-        '<p style="margin-top:14px"><a class="cta" href="./#contact">Ask for it to be scanned</a></p></div>';
+      if (SCAN_API) {
+        out.innerHTML = notice("Scanning " + esc(topic) + "…", "Reading its posts now.", "");
+        scanLive(topic);
+        return;
+      }
+      out.innerHTML = notice("Not scanned yet",
+        "Nothing on <strong>" + esc(topic) + "</strong> in this run. The population is " +
+        data.population + " tokens and grows with each one requested.",
+        "Ask for it to be scanned");
       return;
     }
 
@@ -71,17 +96,49 @@
           '<h2 style="margin:0">' + esc(topic) + '</h2>' +
           '<span class="badge flags-' + t.flags + '">' + t.band + '</span>' +
         '</div>' +
-        '<p class="sub" style="font-size:14px">' + t.posts + ' posts read. ' +
-          'Percentiles rank this token against the ' + data.population +
+        '<p class="sub" style="font-size:14px">' + t.posts + ' posts read' +
+          (t.source === "live" ? ", scanned just now" : "") + '. ' +
+          'Percentiles rank this token against the ' +
+          (t.compared_against || data.population) +
           ' scanned, not against a fixed threshold.</p>' +
         rows +
       '</div>';
   }
 
+  var inflight = null;
+
+  function scanLive(topic) {
+    if (inflight === topic) { return; }
+    inflight = topic;
+    fetch(SCAN_API + "/scan?topic=" + encodeURIComponent(topic))
+      .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
+      .then(function (res) {
+        if (normalise(el("q").value) !== topic) { return; }   // they typed on
+        if (!res.ok) {
+          el("result").innerHTML = notice("Could not scan that yet",
+            esc(res.body.message || "Try again shortly."), "Ask for a full audit");
+          return;
+        }
+        render(topic, res.body);
+      })
+      .catch(function () {
+        el("result").innerHTML = notice("Not scanned yet",
+          "Nothing on <strong>" + esc(topic) + "</strong> in this run.",
+          "Ask for it to be scanned");
+      })
+      .finally(function () { inflight = null; });
+  }
+
+  var debounce = null;
   function go() {
     var v = el("q").value;
     if (!v.trim()) { el("result").hidden = true; return; }
-    render(normalise(v));
+    var topic = normalise(v);
+    // Known tokens render instantly off the static file; only an unknown one
+    // waits, so a live call is never fired on every keystroke of a known name.
+    if (data.tokens[topic] || !SCAN_API) { render(topic); return; }
+    clearTimeout(debounce);
+    debounce = setTimeout(function () { render(topic); }, 450);
   }
 
   fetch("assets/scans.json")
