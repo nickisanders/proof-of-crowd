@@ -1,0 +1,83 @@
+# Proof of Crowd
+
+> Evidence-based attention audits for crypto tokens. Measures whether a token's
+> social conversation is carried by a real population or a small number of
+> accounts, and whether that attention produced anyone who actually bought.
+> Run by Nicki Sanders. Methodology is published in full.
+
+The question an audit answers: a token's conversation spiked to two million
+interactions. Did anybody show up? Manufactured attention and genuine discovery
+leave different signatures, and the difference is measurable.
+
+## What is measured
+
+- **Creator concentration.** What share of a token's interactions come from its
+  few loudest accounts.
+- **Repeated wording.** What share of posts carry near-identical text across
+  three or more separate accounts. One account repeating itself is a spammer;
+  forty accounts posting the same line is a campaign.
+- **Cross-token accounts.** What share of interactions come from accounts that
+  also post about several other tokens in the same period.
+- **Spam against the token's own baseline**, rather than against an absolute
+  number, because some legitimate communities live in noisy neighbourhoods.
+- **Decay signature.** Genuine adoption leaves a durably higher attention floor;
+  campaigns leave a crater.
+- **Supply concentration.** How much of the token is held by its largest
+  addresses, separating wallets from liquidity pools, bridges, multisigs,
+  exchange custody and burn addresses.
+- **Attention-to-holder conversion.** First-time holders per million
+  interactions on spike days against ordinary days, rebuilt from raw onchain
+  Transfer logs.
+
+## Engagements
+
+- **Pulse Check — $500, 48 hours.** Single token, current state, full evidence
+  pack, one-page written assessment.
+- **Full Audit — $2,500, one week.** Complete attention history with every spike
+  classified, creator and campaign forensics, 10+ page report and a walkthrough
+  call. Suitable for listing applications and diligence files.
+- **Monitoring — $750/month.** Daily detector watch, alerts on fresh spam waves
+  or concentration shifts, monthly written report.
+
+## Findings from the underlying research
+
+Published across 35 open-source projects covering 6.5 years of daily data on
+roughly 1,000 coins.
+
+- About 85% of crypto social spikes are spam-heavy, and those carry no positive
+  signal.
+- The organic minority improves the odds of beating Bitcoin over three days from
+  41.9% to 49.0%, which is the only comparison surviving multiple-testing
+  correction.
+- That edge is relative rather than directional: scored on whether price simply
+  rose, it disappears.
+- It requires the price not to have moved yet. The same spike after a 5% run is
+  worth nothing.
+- It does not work on stocks: 4,063 tickers, 9,073 events, no effect.
+- Crypto attention has a roughly one-hour median half-life. What separates real
+  from rented is not how fast it fades but who carried it while it lived.
+
+## Integrity
+
+- The fee buys the audit, not the answer. Conclusions follow the data, including
+  for paying clients.
+- Tokens held by the author are not audited.
+- Reports describe measurable conversation patterns. They never claim to
+  identify who is behind amplification, because identical wording is equally
+  consistent with a paid campaign, an airdrop task, a quote-tweet chain, or a
+  community handed a template.
+- Social data comes from LunarCrush under a disclosed affiliate relationship.
+  Analysis and conclusions are independent of it.
+
+## Links
+
+- [Home](https://proofofcrowd.com/): service, pricing, methodology
+- [Sample report](https://proofofcrowd.com/sample.html): the $ZAMA spike of
+  31 July 2026, audited as a public specimen
+- [Open research](https://github.com/nickisanders/lunarcrush-projects): 35
+  projects, with null results published as carefully as the findings
+- [Author on X](https://x.com/nickisanders)
+
+## Contact
+
+Audit requests go through the form at https://proofofcrowd.com/#contact
