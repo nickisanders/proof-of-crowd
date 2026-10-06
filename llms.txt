@@ -31,11 +31,14 @@ leave different signatures, and the difference is measurable.
 
 ## Engagements
 
-- **Pulse Check — $500, 48 hours.** Single token, current state, full evidence
-  pack, one-page written assessment.
-- **Full Audit — $2,500, one week.** Complete attention history with every spike
-  classified, creator and campaign forensics, 10+ page report and a walkthrough
-  call. Suitable for listing applications and diligence files.
+- **Pulse Check — $500, 24 hours.** Single token, current state. Full evidence
+  pack covering composition, baselines and the holder distribution, with a
+  one-page written assessment.
+- **Full Audit — $2,500, 5 business days.** Complete attention history with
+  every spike classified, creator and campaign forensics, holder retention and
+  attention-to-holder conversion rebuilt from raw onchain data, a 10+ page
+  report and a walkthrough call. Suitable for listing applications and
+  diligence files.
 - **Monitoring — $750/month.** Daily detector watch, alerts on fresh spam waves
   or concentration shifts, monthly written report.
 

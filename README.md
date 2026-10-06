@@ -104,8 +104,8 @@ Self-hosting an open Charter would close that gap.
 
 | Tier | Price | Turnaround |
 |---|---|---|
-| Pulse Check | $500 | 48 hours |
-| Full Audit | $2,500 | one week |
+| Pulse Check | $500 | 24 hours |
+| Full Audit | $2,500 | 5 business days |
 | Monitoring | $750/mo | ongoing |
 
 Independent analysis. Not financial advice.
