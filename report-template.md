@@ -24,6 +24,9 @@
 | Organic share (institutional volume removed) | | the conversation underneath the promos |
 | Manufactured score (current) | /100 | organic / mixed / manufactured |
 | Attention floor trend (residue) | | compounding / flat / cratered |
+| Holders with $100+ | | of the headline holder count |
+| Holder retention | | still holding / ever held |
+| Attention-to-holder conversion | | spike days vs ordinary days |
 
 ## 2. The conversation today
 
@@ -49,15 +52,45 @@
 
 Where institutional or megaphone volume dominates, the report recomputes the token's conversation with that volume removed, so the organic layer underneath is visible on its own terms.
 
-## 5. Benchmarks
+## 5. The holder base
+
+*Standing section. The headline holder count is a vanity number on its own: a
+token can report 165,000 holders where most hold airdrop dust, and another can
+report 8,000 where every one is a position. Two figures replace it.*
+
+**Distribution.** Every holder enumerated with their balance, bucketed by
+position size, with contracts, exchange custody and burn addresses classified
+out. The number that matters is how many hold a position someone would notice
+losing, not how many addresses the contract has touched.
+
+| Position size | Wallets | Share |
+|---|---:|---:|
+| $10k+ | | |
+| $1k - $10k | | |
+| $100 - $1k | | |
+| $10 - $100 | | |
+| under $10 | | |
+
+**Retention.** Addresses that ever received the token against addresses that
+hold it today. A token whose holders have mostly left looks identical to a
+healthy one if only the current count is read, and the gap is often the single
+most informative number in an audit.
+
+| | |
+|---|---:|
+| ever received | |
+| still hold | |
+| **retention** | |
+
+## 6. Benchmarks
 
 *The token vs its market-cap band and its narrative peers: spam norms, concentration norms, attention-per-dollar efficiency. "Noisy neighborhood" context so absolute numbers aren't misread.*
 
-## 6. What this audit cannot determine
+## 7. What this audit cannot determine
 
 *Standing section, verbatim in every report: post-level labels measure amplification, not its source. Bot campaign, coordinated advocacy, algorithmic amplification, and unusually tight real communities can produce overlapping patterns. Where evidence is consistent with more than one mechanism, this report says so. Payment does not influence conclusions.*
 
-## 7. Appendix
+## 8. Appendix
 
 *Raw evidence: data pulls, thresholds used, calibration references (link to public methodology commits), reproduction instructions.*
 
