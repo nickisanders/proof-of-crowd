@@ -72,7 +72,11 @@ footer p { margin-bottom: 8px; }
 /* report pages */
 .report-meta { color: var(--sub); font-size: 15px; margin-top: 10px; }
 .verdict-banner { border-radius: 12px; padding: 22px 24px; margin: 28px 0; background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--bad); }
+/* The organic variant has to recolour the score too. Only the border was
+   being switched, so a clean verdict printed its number in the colour that
+   means manufactured, contradicting the word next to it. */
 .verdict-banner.organic { border-left-color: var(--ok); }
+.verdict-banner.organic .score { color: var(--ok); }
 .verdict-banner .score { font-size: 34px; font-weight: 800; color: var(--bad); }
 table { width: 100%; border-collapse: collapse; margin: 14px 0 8px; font-size: 15px; }
 th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }

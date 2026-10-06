@@ -72,8 +72,13 @@ roughly 1,000 coins.
 ## Links
 
 - [Home](https://proofofcrowd.com/): service, pricing, methodology
-- [Sample report](https://proofofcrowd.com/sample.html): the $ZAMA spike of
-  31 July 2026, audited as a public specimen
+- [Sample report, organic verdict](https://proofofcrowd.com/sample-fet.html):
+  $FET audited October 2026, scoring 23/100. Five attention spikes in three
+  weeks with a growing crowd at each, an attention floor 2.4x higher than two
+  months earlier, and an onchain conversion result that argues the other way
+- [Sample report, manufactured verdict](https://proofofcrowd.com/sample.html):
+  the $ZAMA spike of 31 July 2026, scoring 97/100. Both are published because a
+  method that only ever finds problems is not measuring anything
 - [Open research](https://github.com/nickisanders/lunarcrush-projects): 35
   projects, with null results published as carefully as the findings
 - [Author on X](https://x.com/nickisanders)
