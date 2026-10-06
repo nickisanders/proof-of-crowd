@@ -73,6 +73,7 @@
     <div class="score"><span class="fig">23/100</span> · organic</div>
     <p style="margin: 10px 0 0;">$FET's attention is carried by a real and growing population. Across three weeks it spiked five times and the number of distinct people posting rose at every one, from 421 to 684. Spam fell as a share of posts during the largest spike, to 0.61x the token's own norm, which is the opposite of a purchased wave. No near-identical wording appears across separate accounts at all.</p>
     <p style="margin: 10px 0 0;">The strongest evidence sits between the spikes rather than at them. Counting only quiet days, attention runs 2.42x where it did two months ago with 1.58x the people. Arrivals are staying.</p>
+    <p style="margin: 10px 0 0;">Two onchain measurements argue the other way and are reported rather than set aside. Of everyone who has ever held $FET, 32.6% still do, and only 45,252 addresses hold a position worth $100 or more. Spike days converted attention to first-time holders at 0.38x the ordinary rate.</p>
   </div>
 
   <table class="report-table">
@@ -84,6 +85,8 @@
     <tr><td>Largest single account</td><td>38.1%, 62,801 followers</td><td>real account, not a burner</td></tr>
     <tr><td>Attention floor, 90 days</td><td>2.42x, with 1.58x the people</td><td><span class="ok">compounding</span></td></tr>
     <tr><td>Onchain conversion on spikes</td><td>0.38x the ordinary rate</td><td><span class="flag">peaks did not convert</span></td></tr>
+    <tr><td>Holders with $100+</td><td>45,252 of 165,574</td><td><span class="flag">27% of the headline count</span></td></tr>
+    <tr><td>Holder retention</td><td>32.6%</td><td><span class="flag">two thirds have left</span></td></tr>
     <tr><td>Manufactured score</td><td>23/100</td><td><span class="ok">organic (under 30)</span></td></tr>
   </table>
   <p class="sub" style="margin-top:14px">Score computed with the published formula in the open <a href="https://github.com/nickisanders/lunarcrush-projects/tree/main/projects/hype-detector">hype-detector</a> project: spam lift 0.0, spam share 3.7, concentration 18.8, sentiment uniformity 0.0.</p>
@@ -130,7 +133,33 @@
 </section>
 
 <section>
-  <h2>5 · Benchmarks</h2>
+  <h2>5 · The holder base</h2>
+  <p>A headline holder count is a vanity number on its own. 165,000 holders where most hold airdrop dust is a different token from 8,000 where every one is a position, and the count cannot tell them apart. Every holder was enumerated with their balance.</p>
+  <img class="chart" src="assets/fet-holders.png" alt="$FET wallets by position size: 1,455 hold $10k or more, 10,203 hold $1k to $10k, 33,594 hold $100 to $1k, and 113,961 hold under $100">
+  <table class="report-table">
+    <tr><th>Position size</th><th>Wallets</th><th>Share</th></tr>
+    <tr><td>$10k or more</td><td>1,455</td><td>0.9%</td></tr>
+    <tr><td>$1k to $10k</td><td>10,203</td><td>6.4%</td></tr>
+    <tr><td>$100 to $1k</td><td>33,594</td><td>21.1%</td></tr>
+    <tr><td>$10 to $100</td><td>42,171</td><td>26.5%</td></tr>
+    <tr><td>$1 to $10</td><td>31,722</td><td>19.9%</td></tr>
+    <tr><td>under $1</td><td>40,068</td><td>25.2%</td></tr>
+  </table>
+  <p><strong>45,252 addresses hold $100 or more, 27.3% of the 165,574 headline count.</strong> A quarter of all holders hold under a dollar. The figure a project would quote overstates the holder base with a real position by roughly 3.7x. That is not unusual, which is exactly why it is reported this way.</p>
+  <table class="report-table">
+    <tr><th>Retention</th><th></th></tr>
+    <tr><td>ever received the token</td><td>507,165</td></tr>
+    <tr><td>still hold it</td><td>165,574</td></tr>
+    <tr><td><strong>retention</strong></td><td><span class="flag">32.6%</span></td></tr>
+  </table>
+  <p>341,591 addresses have held $FET at some point and no longer hold any. Two thirds of everyone who has ever held it has left.</p>
+  <div class="integrity">
+    <p style="margin:0">This is the sharpest counterweight in the report to the social finding. A conversation that is broadening, with a rising attention floor, is happening around a token whose historical holder base has mostly exited. Both are measured and neither cancels the other. The exchange-volume caveat from section 3 applies here too: an address that bought on an exchange and never withdrew appears in neither figure.</p>
+  </div>
+</section>
+
+<section>
+  <h2>6 · Benchmarks</h2>
   <p>Ranked against a verified population of 200 tokens by market-cap rank, stablecoins and wrapped assets excluded:</p>
   <table class="report-table">
     <tr><th>Metric</th><th>$FET</th><th>Percentile of 200</th></tr>
@@ -143,7 +172,7 @@
 </section>
 
 <section>
-  <h2>6 · What this audit cannot determine</h2>
+  <h2>7 · What this audit cannot determine</h2>
   <p>Post-level labels measure amplification, not its source. A bot campaign, coordinated advocacy, algorithmic amplification and an unusually tight real community can produce overlapping patterns. Where evidence is consistent with more than one mechanism, this report says so.</p>
   <p>Specifically here: an absence of copypasta rules out one technique and does not rule out coordination conducted carefully. Follower counts are not authenticity. The creators endpoint reflects measurable interactions, so a network spreading activity across many small accounts reads as less concentrated than it is.</p>
   <p>The onchain conversion figure cannot separate attention that failed to produce buyers from buying that happened somewhere this measurement cannot see. For a token with this much exchange volume the second explanation is at least as likely as the first, and nothing in the data distinguishes them.</p>
@@ -151,7 +180,7 @@
 </section>
 
 <section>
-  <h2>7 · Provenance</h2>
+  <h2>8 · Provenance</h2>
   <p class="sub">Social data from LunarCrush. Onchain data from SQD Portal, Blockscout and Ethplorer. Market cross-check against GeckoTerminal. Spike threshold 2x the token's own 30-day median. Near-duplicate detection at Jaccard 0.6 over 3-word shingles, requiring three or more distinct accounts. Every tool used here is described in the <a href="https://github.com/nickisanders/lunarcrush-projects">open methodology</a>.</p>
   <p class="sub"><strong>A note on sample selection.</strong> <a href="sample.html">The other published specimen</a> scored 97/100 and came back manufactured. Both are shown because a method that only ever finds problems is not measuring anything.</p>
   <p style="margin-top: 24px;"><a class="cta" href="./#contact">Get this for your token</a></p>

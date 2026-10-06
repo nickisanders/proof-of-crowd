@@ -82,3 +82,30 @@ body.append(txt(60, 520, 22, INK, "Spike days carried 3.6x the attention and 1.3
 body.append(txt(60, 550, 18, SUB, "The extra attention converted at 0.38x the ordinary rate."))
 body.append(txt(60, 590, 17, SUB, "Caveat: ~99.9% of $FET volume is on exchanges, where a buyer creates no onchain transfer."))
 render("fet-conversion", 1200, 630, "".join(body))
+
+
+# ------------------------------------------ the holder base: distribution and retention
+BUCKETS = [("$10k+", 1_455), ("$1k - $10k", 10_203), ("$100 - $1k", 33_594),
+           ("$10 - $100", 42_171), ("$1 - $10", 31_722), ("under $1", 40_068)]
+WALLETS, HEADLINE, EVER = 159_213, 165_574, 507_165
+MEANINGFUL = 45_252
+
+body = [txt(60, 56, 36, INK, "165,574 holders, 45,252 with a real position", 700),
+        txt(60, 90, 21, SUB, "$FET wallets by position size, contracts and custody excluded")]
+L, TOP, ROW = 300, 140, 56
+widest = max(n for _, n in BUCKETS)
+for i, (label, n) in enumerate(BUCKETS):
+    y = TOP + i * ROW
+    w = 720 * n / widest
+    meaningful = label in ("$10k+", "$1k - $10k", "$100 - $1k")
+    body.append(txt(L - 20, y + 20, 20, INK if meaningful else SUB, label, 700 if meaningful else 400, "end"))
+    body.append(f'<rect x="{L}" y="{y}" width="{w:.0f}" height="28" rx="3" '
+                f'fill="{BRAND if meaningful else NEUTRAL}"/>')
+    body.append(txt(L + w + 14, y + 20, 19, INK, f"{n:,}", 700, "start", MONO))
+body.append(f'<rect x="60" y="{TOP + len(BUCKETS)*ROW + 16}" width="1080" height="1.5" fill="{RULE}"/>')
+yb = TOP + len(BUCKETS) * ROW + 56
+body.append(txt(60, yb, 22, INK, f"Only {MEANINGFUL:,} hold $100 or more, 27% of the headline count.", 700))
+body.append(txt(60, yb + 30, 19, SUB, "A quarter of all holders hold under a dollar."))
+body.append(txt(60, yb + 74, 22, BAD, f"Retention: 32.6%", 700))
+body.append(txt(260, yb + 74, 19, SUB, f"{EVER:,} addresses have held $FET. {HEADLINE:,} still do."))
+render("fet-holders", 1200, yb + 110, "".join(body))
