@@ -160,14 +160,19 @@
 
 <section>
   <h2>6 · Benchmarks</h2>
-  <p>Ranked against a verified population of 200 tokens by market-cap rank, stablecoins and wrapped assets excluded:</p>
+  <p>Ranked against a verified population of 200 tokens by market-cap rank, stablecoins and wrapped assets excluded.</p>
+  <div class="integrity">
+    <p style="margin:0"><strong>Correction, 2026-10-07.</strong> These percentiles were originally computed against the whole population, and two of the three signals move with market cap for arithmetic reasons. An account posting about twenty tokens posts about the big ones by definition, so cross-token overlap rises with size. A token with forty people talking will always have its loudest three owning more of the conversation than one with four thousand, so concentration falls with size. A whole-population rank charges a token for its size. The method now ranks within market-cap bands and the figures below are recomputed; the original global ranks were 70th and 65th. The <a href="https://github.com/nickisanders/lunarcrush-projects/tree/main/projects/size-bias">measurement is published</a>.</p>
+  </div>
+  <p>$FET sits in the middle band at $521M, against 62 peers of comparable size:</p>
   <table class="report-table">
-    <tr><th>Metric</th><th>$FET</th><th>Percentile of 200</th></tr>
-    <tr><td>Creator concentration</td><td>69.9%</td><td>70th</td></tr>
+    <tr><th>Metric</th><th>$FET</th><th>Percentile of 62 same-size peers</th></tr>
+    <tr><td>Creator concentration</td><td>63.6%</td><td>61st</td></tr>
     <tr><td>Repeated wording across accounts</td><td>0.0%</td><td>0th</td></tr>
-    <tr><td>Cross-token accounts</td><td>17.3%</td><td>65th</td></tr>
+    <tr><td>Cross-token accounts</td><td>17.4%</td><td>61st</td></tr>
   </table>
-  <p>Concentration sits in the upper third, which is the one thing an informed reader should push back on. It is not accompanied by any of the signals that usually travel with manufactured concentration.</p>
+  <p>Both ranks fall once the comparison is fair, which is the expected direction for a mid-cap token previously measured against the whole market.</p>
+  <p>Concentration still sits above the median for its band, which is the one thing an informed reader should push back on. It is not accompanied by any of the signals that usually travel with manufactured concentration.</p>
   <p><strong>Supply.</strong> 165,585 holders, cross-checked against a second source at 165,145, a 0.3% difference. Top-10 holders control 48.0% of supply across all addresses but <strong>27.7% once contracts are excluded</strong>; the two largest are Gnosis Safes at 10.2% and 9.6%, consistent with treasury rather than individual positions.</p>
 </section>
 
