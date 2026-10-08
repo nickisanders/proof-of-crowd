@@ -160,19 +160,22 @@
 
 <section>
   <h2>6 · Benchmarks</h2>
-  <p>Ranked against a verified population of 200 tokens by market-cap rank, stablecoins and wrapped assets excluded.</p>
+  <p>Ranked against a verified population of 130 tokens by market-cap rank, stablecoins and wrapped assets excluded.</p>
   <div class="integrity">
     <p style="margin:0"><strong>Correction, 2026-10-07.</strong> These percentiles were originally computed against the whole population, and two of the three signals move with market cap for arithmetic reasons. An account posting about twenty tokens posts about the big ones by definition, so cross-token overlap rises with size. A token with forty people talking will always have its loudest three owning more of the conversation than one with four thousand, so concentration falls with size. A whole-population rank charges a token for its size. The method now ranks within market-cap bands and the figures below are recomputed; the original global ranks were 70th and 65th. The <a href="https://github.com/nickisanders/lunarcrush-projects/tree/main/projects/size-bias">measurement is published</a>.</p>
   </div>
-  <p>$FET sits in the middle band at $521M, against 62 peers of comparable size:</p>
+  <div class="integrity">
+    <p style="margin:0"><strong>Correction, 2026-10-08.</strong> The population these percentiles rank against was itself checked, and 78 of its 200 topics turned out not to be about their tokens: short tickers collide with ordinary words, so the baseline contained conversation about sand, cake, bats and a Twitch streamer. The population is now 130 verified topics and the figures below are recomputed against it. <strong>The cross-token figure changed as well as its rank</strong>, because that signal is measured against the population basket and the basket is what was wrong. On a clean basket $FET sits below its peer median rather than above it. The <a href="https://github.com/nickisanders/lunarcrush-projects/tree/main/projects/size-bias">banding</a> from the previous correction still applies.</p>
+  </div>
+  <p>$FET sits in the middle band at $521M, against 41 peers of comparable size:</p>
   <table class="report-table">
-    <tr><th>Metric</th><th>$FET</th><th>Percentile of 62 same-size peers</th></tr>
-    <tr><td>Creator concentration</td><td>63.6%</td><td>61st</td></tr>
-    <tr><td>Repeated wording across accounts</td><td>0.0%</td><td>0th</td></tr>
-    <tr><td>Cross-token accounts</td><td>17.4%</td><td>61st</td></tr>
+    <tr><th>Metric</th><th>$FET</th><th>Percentile of 41 same-size peers</th><th>Peer median</th></tr>
+    <tr><td>Creator concentration</td><td>60.2%</td><td>58th</td><td>51.4%</td></tr>
+    <tr><td>Repeated wording across accounts</td><td>0.0%</td><td>0th</td><td>0.0%</td></tr>
+    <tr><td>Cross-token accounts</td><td>9.8%</td><td>31st</td><td>27.0%</td></tr>
   </table>
-  <p>Both ranks fall once the comparison is fair, which is the expected direction for a mid-cap token previously measured against the whole market.</p>
-  <p>Concentration still sits above the median for its band, which is the one thing an informed reader should push back on. It is not accompanied by any of the signals that usually travel with manufactured concentration.</p>
+  <p>Each correction moved the ranks down. Against the whole market the figures read 70th and 65th, against same-size peers 61st and 61st, and against same-size peers on a baseline that is actually about tokens, 58th and 31st.</p>
+  <p>Concentration still sits above the median for its band, which remains the one figure an informed reader should push back on. It is not accompanied by any of the signals that usually travel with manufactured concentration, and cross-token accounts now read well below the peer median rather than above it.</p>
   <p><strong>Supply.</strong> 165,574 holders, cross-checked against a second source at 165,145, a 0.3% difference. Top-10 holders control 48.0% of supply across all addresses but <strong>27.7% once contracts are excluded</strong>; the two largest are Gnosis Safes at 10.2% and 9.6%, consistent with treasury rather than individual positions.</p>
 </section>
 
