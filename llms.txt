@@ -77,6 +77,7 @@ roughly 1,000 coins.
 - [Home](https://proofofcrowd.com/): service, pricing, methodology
 - [Sample report, organic verdict](https://proofofcrowd.com/sample-fet.html):
 - [$LAPTOP audited](https://proofofcrowd.com/sample-laptop.html): public specimen, 25/100 organic. No paid-promotion signature at all; one published claim about a token lock does not survive checking.
+- [$W audited](https://proofofcrowd.com/sample-w.html): public specimen, 25/100 organic. The Ethereum contract holds a tenth of the token and nearly half of that slice sits in a vesting lockup and an exchange.
   $FET audited October 2026, scoring 23/100. Five attention spikes in three
   weeks with a growing crowd at each, an attention floor 2.4x higher than two
   months earlier, and an onchain conversion result that argues the other way
