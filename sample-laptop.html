@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>$LAPTOP audited &middot; Proof of Crowd</title>
-<meta name="description" content="Public specimen report: $LAPTOP scores 25/100, organic. The crowd is real and unpaid. One published claim about the chain does not hold.">
+<meta name="description" content="Public specimen report: $LAPTOP scores 22/100, organic. The crowd is real and unpaid. One published claim about the chain does not hold.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/favicon-180.png">
@@ -12,7 +12,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Proof of Crowd">
 <meta property="og:title" content="$LAPTOP audited &middot; Proof of Crowd">
-<meta property="og:description" content="25/100, organic. No paid-promotion signature at all. One published claim about the chain does not survive checking.">
+<meta property="og:description" content="22/100, organic. No paid-promotion signature at all. One published claim about the chain does not survive checking.">
 <meta property="og:url" content="https://proofofcrowd.com/sample-laptop.html">
 <meta property="og:image" content="https://proofofcrowd.com/assets/og.png">
 <meta property="og:image:width" content="1200">
@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@nickisanders">
 <meta name="twitter:title" content="$LAPTOP audited &middot; Proof of Crowd">
-<meta name="twitter:description" content="25/100, organic. No paid-promotion signature at all. One published claim about the chain does not survive checking.">
+<meta name="twitter:description" content="22/100, organic. No paid-promotion signature at all. One published claim about the chain does not survive checking.">
 <meta name="twitter:image" content="https://proofofcrowd.com/assets/og.png">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
@@ -31,7 +31,7 @@
  "datePublished": "2026-10-08",
  "author": {"@type": "Organization", "name": "Proof of Crowd"},
  "publisher": {"@type": "Organization", "name": "Proof of Crowd"},
- "description": "Public specimen. $LAPTOP scores 25/100, organic: the accounts carrying its conversation post about no other tokens, which is the absence of the clearest paid-promotion signature. Supply was rebuilt from every Transfer event. One published claim about a token lock does not hold."
+ "description": "Public specimen. $LAPTOP scores 22/100, organic: the accounts carrying its conversation post about no other tokens, which is the absence of the clearest paid-promotion signature. Supply was rebuilt from every Transfer event. One published claim about a token lock does not hold."
 }
 </script>
 </head>
@@ -54,7 +54,7 @@
 <section style="border-top: none; padding-top: 24px;">
   <h2>1 &middot; Verdict summary</h2>
   <div class="verdict-banner organic">
-    <div class="score"><span class="fig">25/100</span> &middot; organic</div>
+    <div class="score"><span class="fig">22/100</span> &middot; organic</div>
     <p style="margin: 10px 0 0;">Nothing in $LAPTOP's social data looks bought. The clearest signature of paid promotion is a population of accounts that post about many unrelated tokens, and that population is absent: accounts discussing $LAPTOP post about <strong>zero</strong> other tokens, against a measured control that runs higher on essentially every token tested.</p>
     <p style="margin: 10px 0 0;">Spam runs at <strong>0.34x the token's own 30-day norm</strong>, which is the opposite direction from a purchased wave and contributes nothing to the score. Almost the whole score is creator concentration, and that concentration resolves on inspection: one account with a very large existing following carries most of the conversation, which is what a celebrity-founded token looks like rather than what a bought one looks like.</p>
     <p style="margin: 10px 0 0;">The chain is where a published claim breaks, and it is reported here rather than set aside. The founder allocation is genuinely untouched. The word used to describe it is not what is deployed.</p>
@@ -70,9 +70,12 @@
     <tr><td>Founder allocation lock</td><td>2-of-3 multisig, no timelock</td><td><span class="flag">not a vesting contract</span></td></tr>
     <tr><td>Holders with $100+</td><td>1,187 of 33,623</td><td><span class="flag">3.5% of the headline count</span></td></tr>
     <tr><td>Supply in individual hands</td><td>roughly 8&ndash;10%</td><td><span class="flag">trackers imply ~36%</span></td></tr>
-    <tr><td>Manufactured score</td><td>25/100</td><td><span class="ok">organic (under 30)</span></td></tr>
+    <tr><td>Manufactured score</td><td>22/100</td><td><span class="ok">organic (under 30)</span></td></tr>
   </table>
-  <p class="sub" style="margin-top:14px">Score computed with the published formula in the open <a href="https://github.com/nickisanders/lunarcrush-projects/tree/main/projects/hype-detector">hype-detector</a> project: spam lift 0.0, spam share 2.6, concentration 22.1, sentiment uniformity 0.0.</p>
+  <div class="integrity">
+    <p style="margin:0"><strong>Scoring update, 2026-10-12.</strong> The score's creator-concentration term is now ranked against same-size peers rather than taken as a raw share, matching how every other figure in this report is compared. Concentration falls with size for arithmetic reasons, so a raw share carries part of a token's size into its score. $LAPTOP moves from 25 to 22. The verdict is unchanged. The <a href="https://github.com/nickisanders/lunarcrush-projects/tree/main/projects/hype-detector">formula is published</a>.</p>
+  </div>
+  <p class="sub" style="margin-top:14px">Score computed with the published formula in the open <a href="https://github.com/nickisanders/lunarcrush-projects/tree/main/projects/hype-detector">hype-detector</a> project: spam lift 0.0, spam share 2.6, concentration 19.5, sentiment uniformity 0.0.</p>
 </section>
 
 <section>
@@ -135,7 +138,7 @@
   <p>Social measurement uses LunarCrush over the thirty days to 2026-10-07, with a live Bitcoin control pulled the same day. The topic was verified as genuinely on-topic by reading its highest-interaction posts before any figure was computed.</p>
   <p>Chain measurement reads Base directly. Holder figures are reconstructed from raw Transfer logs rather than taken from an explorer, because Blockscout's Base instance is behind a bot challenge and the free alternatives either do not serve the chain or cap log queries below a token's history. The reconstruction covers deployment through block 52,303,557 and reconciles to exactly 1,000,000,000. Address types are read from deployed bytecode; which organisation controls any address is not established here and is not claimed.</p>
   <p>Market data from GeckoTerminal. This audit was not commissioned, and no one associated with the token was contacted before publication.</p>
-  <p class="sub" style="margin-top:14px"><strong>A note on sample selection.</strong> The other published specimens scored <a href="sample.html">97/100 and came back manufactured</a>, <a href="sample-fet.html">23/100 and came back organic</a>, and <a href="sample-w.html">25/100 with most of the token on another chain</a>. All four are shown because a method that only ever finds problems is not measuring anything.</p>
+  <p class="sub" style="margin-top:14px"><strong>A note on sample selection.</strong> The other published specimens scored <a href="sample.html">98/100 and came back manufactured</a>, <a href="sample-fet.html">21/100 and came back organic</a>, and <a href="sample-w.html">25/100 with most of the token on another chain</a>. All four are shown because a method that only ever finds problems is not measuring anything.</p>
   <p style="margin-top: 24px;"><a class="cta" href="./#contact">Get this for your token</a></p>
 </section>
 
