@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Free scan · Proof of Crowd</title>
-<meta name="description" content="Check any token's conversation against three measured signals: how few accounts carry it, how much of the wording repeats across accounts, and how many of those accounts work several tokens at once.">
+<meta name="description" content="Check any token's conversation against three measured signals, each ranked against tokens of a similar market cap: how few accounts carry it, how much of the wording repeats across accounts, and how many of those accounts work several tokens at once.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="https://proofofcrowd.com/scan.html">
 <meta property="og:title" content="Free scan · Proof of Crowd">
-<meta property="og:description" content="Three measured signals on any token's conversation, ranked against every other token scanned.">
+<meta property="og:description" content="Three measured signals on any token's conversation, ranked against tokens of a similar size.">
 <meta property="og:image" content="https://proofofcrowd.com/assets/og.png">
 <meta property="og:url" content="https://proofofcrowd.com/scan.html">
 <meta name="twitter:card" content="summary_large_image">
@@ -31,7 +31,7 @@
 <header class="hero" style="padding-bottom:28px">
   <div class="kicker">Free scan</div>
   <h1>Who is actually <span class="accent">talking?</span></h1>
-  <p class="lede">Three measured signals on a token's conversation, each ranked against every other token scanned. No sign-up, no email.</p>
+  <p class="lede">Three measured signals on a token's conversation, each ranked against tokens of a similar size. No sign-up, no email.</p>
 
   <div class="scanbox">
     <input id="q" type="search" list="tokens" autocomplete="off" spellcheck="false"
@@ -45,7 +45,8 @@
 
 <section>
   <h2>What this does and does not tell you</h2>
-  <p>Each signal is a measurement, and the percentile is a rank against the other tokens scanned rather than a threshold invented here. A token in the 90th percentile is being compared with real peers, not with an idea of what normal looks like.</p>
+  <p>Each signal is a measurement, and the percentile is a rank against tokens of a similar market cap rather than a threshold invented here. Size matters because two of the three signals move with it for arithmetic reasons, so ranking a small token against the whole market charges it for being small. A token in the 90th percentile is being compared with real peers, not with an idea of what normal looks like.</p>
+    <p>Every topic in the population was checked as being genuinely about its token before it was allowed to rank anything. Tickers collide with ordinary words, and a baseline built on the wrong conversation ranks every token against noise.</p>
   <p>None of it says who is behind anything. Repeated wording across accounts is consistent with a paid campaign, an airdrop task, a quote-tweet chain, or a community handed a template, and this will not tell you which.</p>
   <p>The larger thing it cannot see is whether any of the attention produced buyers. That needs onchain work, which takes hours per token and is part of a <a href="./#pricing">paid audit</a>.</p>
   <p style="margin-top:18px"><a class="cta" href="./#contact">Get the full audit on your token</a></p>

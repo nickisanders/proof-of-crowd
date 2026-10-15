@@ -74,6 +74,19 @@
       return;
     }
 
+  // 81 was rendering as "81th". 11, 12 and 13 take "th" despite ending in
+  // 1, 2 and 3, which is why the teens are checked before the last digit.
+  function ordinal(n) {
+    var tens = n % 100, ones = n % 10;
+    var suffix = (tens >= 11 && tens <= 13) ? "th"
+      : ones === 1 ? "st" : ones === 2 ? "nd" : ones === 3 ? "rd" : "th";
+    return n + suffix;
+  }
+
+  function peerCount(t) {
+    return (t && t.compared_against) || data.population;
+  }
+
     var rows = METRICS.map(function (m) {
       var key = m[0], value = t[key], p = t.percentiles[key];
       var width = p === null || p === undefined ? 0 : Math.round(p * 100);
@@ -85,7 +98,8 @@
           '<div class="bar"><span style="width:' + width + '%"></span></div>' +
           '<div class="metric-foot">' + m[2] +
             '<span>' + (p === null || p === undefined ? "" :
-              Math.round(p * 100) + "th percentile of " + data.population) + '</span>' +
+              ordinal(Math.round(p * 100)) + " percentile of " + peerCount(t) +
+              (t.size_band && t.size_band !== "unbanded" ? " tokens its size" : " tokens scanned")) + '</span>' +
           '</div>' +
         '</div>';
     }).join("");
@@ -98,9 +112,12 @@
         '</div>' +
         '<p class="sub" style="font-size:14px">' + t.posts + ' posts read' +
           (t.source === "live" ? ", scanned just now" : "") + '. ' +
-          'Percentiles rank this token against the ' +
-          (t.compared_against || data.population) +
-          ' scanned, not against a fixed threshold.</p>' +
+            (t.size_band && t.size_band !== "unbanded"
+              ? 'Percentiles rank this token against the ' + peerCount(t) +
+                ' tokens of a similar market cap, not against a fixed threshold ' +
+                'and not against the whole population.</p>'
+              : 'No market cap resolved for this one, so it is ranked against ' +
+                'all ' + peerCount(t) + ' tokens scanned rather than against its own size.</p>') +
         rows +
       '</div>';
   }
@@ -150,7 +167,8 @@
         var o = document.createElement("option"); o.value = k; list.appendChild(o);
       });
       el("meta").textContent =
-        j.population + " tokens scanned " + j.generated.slice(0, 10) + ".";
+        j.population + " tokens scanned " + j.generated.slice(0, 10) +
+        ", each verified as being about its token and ranked within its size.";
       el("q").addEventListener("input", go);
       var pre = new URLSearchParams(location.search).get("t");
       if (pre) { el("q").value = pre; go(); }
