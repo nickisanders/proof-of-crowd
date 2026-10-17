@@ -121,7 +121,27 @@
   <h2>6 &middot; What this audit cannot determine</h2>
   <p>It does not identify who is behind any account, and it does not establish motive. It takes no view on the token's technology, its bridge, or its team.</p>
   <div class="integrity">
-    <p style="margin:0"><strong>Two gaps, stated rather than glossed.</strong> <strong>Retention is not included.</strong> The first-holder scan over this contract's full history reached 1.3% before the upstream data service stopped answering, and is running again; it will be added as a dated appendix rather than folded in silently. On comparable audits that figure, the share of addresses that ever held and have since left, has been the most informative onchain number in the report. <strong>The Solana side is not audited</strong>, because the reconstruction tooling covers EVM chains only, so 89.4% of the token's supply sits outside what was measured here.</p>
+    <p style="margin:0"><strong>One gap remains.</strong> <strong>Retention has since been measured</strong> and is in <a href="#retention">the appendix below</a>, added 2026-10-17. It was listed here as a gap when this report was published, because the scan had covered 1.3% of the contract's history before the upstream data service stopped answering. <strong>The Solana side is not audited</strong>, because the reconstruction tooling covers EVM chains only, so 89.4% of the token's supply sits outside what was measured here.</p>
+  </div>
+</section>
+
+<section id="retention">
+  <h2>8 &middot; Retention, added 2026-10-17</h2>
+  <p>The gap stated in section 6 is closed. The first-holder scan finished on 2026-10-17, covering blocks 19,663,982 to 26,207,480, which is the contract's full history on Ethereum. It needed roughly a day of continuous scanning and 901 days of transfers.</p>
+  <table class="report-table">
+    <tr><th>Measured</th><th>Addresses</th><th>Read</th></tr>
+    <tr><td>Ever received $W on Ethereum</td><td>26,714</td><td>across 901 days</td></tr>
+    <tr><td>Holding it now</td><td>9,598</td><td></td></tr>
+    <tr><td>Have left</td><td>17,116</td><td><span class="flag">64.1% of everyone who ever held</span></td></tr>
+    <tr><td>Retention</td><td>35.9%</td><td></td></tr>
+  </table>
+  <p><strong>Roughly two in three addresses that ever held this token have gone.</strong> Of the 9,598 that remain, 1,487 hold $100 or more, so about <strong>5.6% of every address that ever touched $W still holds a position worth something</strong>.</p>
+  <div class="integrity">
+    <p style="margin:0"><strong>What this figure is and is not.</strong> It counts addresses, not people, and both sides of the ratio include contracts and exchange addresses. It measures first receipts rather than purchases, so an address that received during a spike and sold an hour later counts as having held. A retention figure of this kind has no absolute threshold attached: it is informative against the same token's history and against peers, not against a number invented here. Nothing in it says why anyone left.</p>
+  </div>
+  <p>One date stands out in the daily series. <strong>250 addresses received $W for the first time on 2026-10-12</strong>, against 11 to 60 on the surrounding days. That is the day this report was published, and no causal claim is made about the two.</p>
+  <div class="integrity">
+    <p style="margin:0"><strong>On comparing this with section 5.</strong> The position-size buckets above were measured on 2026-10-12 at a price of $0.0240. $W trades at $0.0138 today, so a count like "holders with $100 or more" moves with the price as well as with the holders. The two dates should not be read as a change in the holder base, and section 5 is left as it was measured rather than quietly restated.</p>
   </div>
 </section>
 
