@@ -39,12 +39,15 @@ def txt(x, y, size, fill, s, weight=400, anchor="start", font=None):
 rows = []
 for p in sorted(glob.glob(str(SRC / "*-wallets.json"))):
     d = json.loads(Path(p).read_text())
-    h = d.get("holders_headline") or 0
-    if h:
-        rows.append({"sym": d["symbol"], "holders": h,
+    h, w = d.get("holders_headline") or 0, d.get("wallets") or 0
+    if h and w:
+        rows.append({"sym": d["symbol"], "holders": h, "wallets": w,
                      "big": d.get("with_100_usd") or 0})
 for r in rows:
-    r["share"] = r["big"] / r["holders"]
+    # Against wallets, never against the headline count. with_100_usd is
+    # counted over wallets alone, so the headline denominator would mix two
+    # populations and understate every bar.
+    r["share"] = r["big"] / r["wallets"]
 rows.sort(key=lambda r: -r["share"])
 
 W, H = 1200, 675
@@ -54,7 +57,7 @@ b = [f'<rect width="{W}" height="{H}" fill="{BG}"/>',
      txt(L, 58, 18, SUB, "PROOF OF CROWD", 700),
      txt(L, 108, 36, TEXT, "Every project leads with a holder count.", 700),
      txt(L, 150, 36, TEXT, "Almost none say what those holders hold.", 700),
-     txt(L, 188, 19, SUB, "Share of holders with a position worth $100 or more.")]
+     txt(L, 188, 19, SUB, "Share of wallets holding $100 or more. Contracts and exchange wallets removed.")]
 
 BAR_L, BAR_W, BH = 200, 560, 32
 y = 220
@@ -69,7 +72,7 @@ for r in rows:
                  PANEL if inside else TEXT, f"{r['share']*100:.1f}%", 700,
                  "end" if inside else "start", MONO))
     b.append(txt(BAR_L + BAR_W + 28, y + BH - 11, 18, SUB,
-                 f"{r['holders']:,} holders"))
+                 f"{r['wallets']:,} wallets"))
     y += BH + 6
 
 blur = next(r for r in rows if r["sym"] == "BLUR")
@@ -77,8 +80,8 @@ y += 16
 b.append(f'<rect x="{L}" y="{y}" width="{R-L}" height="66" fill="{PANEL}"/>')
 b.append(f'<rect x="{L}" y="{y}" width="5" height="66" fill="{BAD}"/>')
 b.append(txt(L + 24, y + 29, 21, TEXT,
-             f"$BLUR reports {blur['holders']:,} holders. {blur['big']:,} of them "
-             f"hold more than $100.", 700))
+             f"$BLUR reports {blur['holders']:,} holders. {blur['wallets']:,} are "
+             f"wallets, and {blur['big']:,} of those hold $100 or more.", 700))
 b.append(txt(L + 24, y + 53, 18, SUB,
              "A holder count treats eleven cents exactly as it treats eleven "
              "thousand dollars."))
